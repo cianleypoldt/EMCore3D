@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/emws.dir/link.d CMakeFiles/emws.dir/src/main.cpp.o -o emws  /usr/lib/libglm.a -lglfw /usr/lib/libGLX.so /usr/lib/libOpenGL.so
