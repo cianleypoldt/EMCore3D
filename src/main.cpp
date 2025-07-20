@@ -1,5 +1,4 @@
-#include <iostream>
+#include "Interface/interface.h"
 
 int main() {
-    std::cout << "Nigger";
 }
