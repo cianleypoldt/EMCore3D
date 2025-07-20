@@ -18,6 +18,8 @@ class YeeGrid {
 
     size_t m_memory_size;
 
+    uint m_magnetic_sample_count = 0;
+    uint m_electric_sample_count = 0;
     vec3* m_magnetic_field_grid = nullptr;
     vec3* m_electric_field_grid = nullptr;
 

@@ -2,5 +2,5 @@
 
 int main() {
 
-    emftdt sim({10, 10, 10});
+    emftdt sim({2, 2, 2});
 }
