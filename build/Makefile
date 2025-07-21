@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -130,6 +130,246 @@ emws/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/build
 .PHONY : emws/fast
 
+src/Entity/PhysicsSystem/physicsSystem.o: src/Entity/PhysicsSystem/physicsSystem.cpp.o
+.PHONY : src/Entity/PhysicsSystem/physicsSystem.o
+
+# target to build an object file
+src/Entity/PhysicsSystem/physicsSystem.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o
+.PHONY : src/Entity/PhysicsSystem/physicsSystem.cpp.o
+
+src/Entity/PhysicsSystem/physicsSystem.i: src/Entity/PhysicsSystem/physicsSystem.cpp.i
+.PHONY : src/Entity/PhysicsSystem/physicsSystem.i
+
+# target to preprocess a source file
+src/Entity/PhysicsSystem/physicsSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.i
+.PHONY : src/Entity/PhysicsSystem/physicsSystem.cpp.i
+
+src/Entity/PhysicsSystem/physicsSystem.s: src/Entity/PhysicsSystem/physicsSystem.cpp.s
+.PHONY : src/Entity/PhysicsSystem/physicsSystem.s
+
+# target to generate assembly for a file
+src/Entity/PhysicsSystem/physicsSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.s
+.PHONY : src/Entity/PhysicsSystem/physicsSystem.cpp.s
+
+src/Entity/entityManager.o: src/Entity/entityManager.cpp.o
+.PHONY : src/Entity/entityManager.o
+
+# target to build an object file
+src/Entity/entityManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o
+.PHONY : src/Entity/entityManager.cpp.o
+
+src/Entity/entityManager.i: src/Entity/entityManager.cpp.i
+.PHONY : src/Entity/entityManager.i
+
+# target to preprocess a source file
+src/Entity/entityManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Entity/entityManager.cpp.i
+.PHONY : src/Entity/entityManager.cpp.i
+
+src/Entity/entityManager.s: src/Entity/entityManager.cpp.s
+.PHONY : src/Entity/entityManager.s
+
+# target to generate assembly for a file
+src/Entity/entityManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Entity/entityManager.cpp.s
+.PHONY : src/Entity/entityManager.cpp.s
+
+src/Render/scalarExtractor.o: src/Render/scalarExtractor.cpp.o
+.PHONY : src/Render/scalarExtractor.o
+
+# target to build an object file
+src/Render/scalarExtractor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o
+.PHONY : src/Render/scalarExtractor.cpp.o
+
+src/Render/scalarExtractor.i: src/Render/scalarExtractor.cpp.i
+.PHONY : src/Render/scalarExtractor.i
+
+# target to preprocess a source file
+src/Render/scalarExtractor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.i
+.PHONY : src/Render/scalarExtractor.cpp.i
+
+src/Render/scalarExtractor.s: src/Render/scalarExtractor.cpp.s
+.PHONY : src/Render/scalarExtractor.s
+
+# target to generate assembly for a file
+src/Render/scalarExtractor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.s
+.PHONY : src/Render/scalarExtractor.cpp.s
+
+src/Render/scalarRenderer.o: src/Render/scalarRenderer.cpp.o
+.PHONY : src/Render/scalarRenderer.o
+
+# target to build an object file
+src/Render/scalarRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o
+.PHONY : src/Render/scalarRenderer.cpp.o
+
+src/Render/scalarRenderer.i: src/Render/scalarRenderer.cpp.i
+.PHONY : src/Render/scalarRenderer.i
+
+# target to preprocess a source file
+src/Render/scalarRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.i
+.PHONY : src/Render/scalarRenderer.cpp.i
+
+src/Render/scalarRenderer.s: src/Render/scalarRenderer.cpp.s
+.PHONY : src/Render/scalarRenderer.s
+
+# target to generate assembly for a file
+src/Render/scalarRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.s
+.PHONY : src/Render/scalarRenderer.cpp.s
+
+src/Render/splineExtractor.o: src/Render/splineExtractor.cpp.o
+.PHONY : src/Render/splineExtractor.o
+
+# target to build an object file
+src/Render/splineExtractor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o
+.PHONY : src/Render/splineExtractor.cpp.o
+
+src/Render/splineExtractor.i: src/Render/splineExtractor.cpp.i
+.PHONY : src/Render/splineExtractor.i
+
+# target to preprocess a source file
+src/Render/splineExtractor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.i
+.PHONY : src/Render/splineExtractor.cpp.i
+
+src/Render/splineExtractor.s: src/Render/splineExtractor.cpp.s
+.PHONY : src/Render/splineExtractor.s
+
+# target to generate assembly for a file
+src/Render/splineExtractor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.s
+.PHONY : src/Render/splineExtractor.cpp.s
+
+src/Render/splineRenderer.o: src/Render/splineRenderer.cpp.o
+.PHONY : src/Render/splineRenderer.o
+
+# target to build an object file
+src/Render/splineRenderer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o
+.PHONY : src/Render/splineRenderer.cpp.o
+
+src/Render/splineRenderer.i: src/Render/splineRenderer.cpp.i
+.PHONY : src/Render/splineRenderer.i
+
+# target to preprocess a source file
+src/Render/splineRenderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.i
+.PHONY : src/Render/splineRenderer.cpp.i
+
+src/Render/splineRenderer.s: src/Render/splineRenderer.cpp.s
+.PHONY : src/Render/splineRenderer.s
+
+# target to generate assembly for a file
+src/Render/splineRenderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.s
+.PHONY : src/Render/splineRenderer.cpp.s
+
+src/Simulation/Grid/gridAllocator.o: src/Simulation/Grid/gridAllocator.cpp.o
+.PHONY : src/Simulation/Grid/gridAllocator.o
+
+# target to build an object file
+src/Simulation/Grid/gridAllocator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o
+.PHONY : src/Simulation/Grid/gridAllocator.cpp.o
+
+src/Simulation/Grid/gridAllocator.i: src/Simulation/Grid/gridAllocator.cpp.i
+.PHONY : src/Simulation/Grid/gridAllocator.i
+
+# target to preprocess a source file
+src/Simulation/Grid/gridAllocator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.i
+.PHONY : src/Simulation/Grid/gridAllocator.cpp.i
+
+src/Simulation/Grid/gridAllocator.s: src/Simulation/Grid/gridAllocator.cpp.s
+.PHONY : src/Simulation/Grid/gridAllocator.s
+
+# target to generate assembly for a file
+src/Simulation/Grid/gridAllocator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.s
+.PHONY : src/Simulation/Grid/gridAllocator.cpp.s
+
+src/Simulation/Grid/yeeGrid.o: src/Simulation/Grid/yeeGrid.cpp.o
+.PHONY : src/Simulation/Grid/yeeGrid.o
+
+# target to build an object file
+src/Simulation/Grid/yeeGrid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o
+.PHONY : src/Simulation/Grid/yeeGrid.cpp.o
+
+src/Simulation/Grid/yeeGrid.i: src/Simulation/Grid/yeeGrid.cpp.i
+.PHONY : src/Simulation/Grid/yeeGrid.i
+
+# target to preprocess a source file
+src/Simulation/Grid/yeeGrid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.i
+.PHONY : src/Simulation/Grid/yeeGrid.cpp.i
+
+src/Simulation/Grid/yeeGrid.s: src/Simulation/Grid/yeeGrid.cpp.s
+.PHONY : src/Simulation/Grid/yeeGrid.s
+
+# target to generate assembly for a file
+src/Simulation/Grid/yeeGrid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.s
+.PHONY : src/Simulation/Grid/yeeGrid.cpp.s
+
+src/Simulation/Grid/yeeUpdate.o: src/Simulation/Grid/yeeUpdate.cpp.o
+.PHONY : src/Simulation/Grid/yeeUpdate.o
+
+# target to build an object file
+src/Simulation/Grid/yeeUpdate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o
+.PHONY : src/Simulation/Grid/yeeUpdate.cpp.o
+
+src/Simulation/Grid/yeeUpdate.i: src/Simulation/Grid/yeeUpdate.cpp.i
+.PHONY : src/Simulation/Grid/yeeUpdate.i
+
+# target to preprocess a source file
+src/Simulation/Grid/yeeUpdate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.i
+.PHONY : src/Simulation/Grid/yeeUpdate.cpp.i
+
+src/Simulation/Grid/yeeUpdate.s: src/Simulation/Grid/yeeUpdate.cpp.s
+.PHONY : src/Simulation/Grid/yeeUpdate.s
+
+# target to generate assembly for a file
+src/Simulation/Grid/yeeUpdate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.s
+.PHONY : src/Simulation/Grid/yeeUpdate.cpp.s
+
+src/Simulation/emftdt.o: src/Simulation/emftdt.cpp.o
+.PHONY : src/Simulation/emftdt.o
+
+# target to build an object file
+src/Simulation/emftdt.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o
+.PHONY : src/Simulation/emftdt.cpp.o
+
+src/Simulation/emftdt.i: src/Simulation/emftdt.cpp.i
+.PHONY : src/Simulation/emftdt.i
+
+# target to preprocess a source file
+src/Simulation/emftdt.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.i
+.PHONY : src/Simulation/emftdt.cpp.i
+
+src/Simulation/emftdt.s: src/Simulation/emftdt.cpp.s
+.PHONY : src/Simulation/emftdt.s
+
+# target to generate assembly for a file
+src/Simulation/emftdt.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.s
+.PHONY : src/Simulation/emftdt.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -163,6 +403,36 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... emws"
+	@echo "... src/Entity/PhysicsSystem/physicsSystem.o"
+	@echo "... src/Entity/PhysicsSystem/physicsSystem.i"
+	@echo "... src/Entity/PhysicsSystem/physicsSystem.s"
+	@echo "... src/Entity/entityManager.o"
+	@echo "... src/Entity/entityManager.i"
+	@echo "... src/Entity/entityManager.s"
+	@echo "... src/Render/scalarExtractor.o"
+	@echo "... src/Render/scalarExtractor.i"
+	@echo "... src/Render/scalarExtractor.s"
+	@echo "... src/Render/scalarRenderer.o"
+	@echo "... src/Render/scalarRenderer.i"
+	@echo "... src/Render/scalarRenderer.s"
+	@echo "... src/Render/splineExtractor.o"
+	@echo "... src/Render/splineExtractor.i"
+	@echo "... src/Render/splineExtractor.s"
+	@echo "... src/Render/splineRenderer.o"
+	@echo "... src/Render/splineRenderer.i"
+	@echo "... src/Render/splineRenderer.s"
+	@echo "... src/Simulation/Grid/gridAllocator.o"
+	@echo "... src/Simulation/Grid/gridAllocator.i"
+	@echo "... src/Simulation/Grid/gridAllocator.s"
+	@echo "... src/Simulation/Grid/yeeGrid.o"
+	@echo "... src/Simulation/Grid/yeeGrid.i"
+	@echo "... src/Simulation/Grid/yeeGrid.s"
+	@echo "... src/Simulation/Grid/yeeUpdate.o"
+	@echo "... src/Simulation/Grid/yeeUpdate.i"
+	@echo "... src/Simulation/Grid/yeeUpdate.s"
+	@echo "... src/Simulation/emftdt.o"
+	@echo "... src/Simulation/emftdt.i"
+	@echo "... src/Simulation/emftdt.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

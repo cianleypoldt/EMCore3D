@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /bin/cmake
+CMAKE_COMMAND = /usr/bin/cmake
 
 # The command to remove a file.
-RM = /bin/cmake -E rm -f
+RM = /usr/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,10 +72,150 @@ include CMakeFiles/emws.dir/flags.make
 CMakeFiles/emws.dir/codegen:
 .PHONY : CMakeFiles/emws.dir/codegen
 
+CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Entity/PhysicsSystem/physicsSystem.cpp
+CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o -MF CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o.d -o CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Entity/PhysicsSystem/physicsSystem.cpp
+
+CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cianleypoldt/Documents/cpp/emws/src/Entity/PhysicsSystem/physicsSystem.cpp > CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.i
+
+CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Entity/PhysicsSystem/physicsSystem.cpp -o CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.s
+
+CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Entity/entityManager.cpp
+CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o -MF CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o.d -o CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Entity/entityManager.cpp
+
+CMakeFiles/emws.dir/src/Entity/entityManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Entity/entityManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cianleypoldt/Documents/cpp/emws/src/Entity/entityManager.cpp > CMakeFiles/emws.dir/src/Entity/entityManager.cpp.i
+
+CMakeFiles/emws.dir/src/Entity/entityManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Entity/entityManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Entity/entityManager.cpp -o CMakeFiles/emws.dir/src/Entity/entityManager.cpp.s
+
+CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Render/scalarExtractor.cpp
+CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o -MF CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o.d -o CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Render/scalarExtractor.cpp
+
+CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cianleypoldt/Documents/cpp/emws/src/Render/scalarExtractor.cpp > CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.i
+
+CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Render/scalarExtractor.cpp -o CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.s
+
+CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Render/scalarRenderer.cpp
+CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o -MF CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o.d -o CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Render/scalarRenderer.cpp
+
+CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cianleypoldt/Documents/cpp/emws/src/Render/scalarRenderer.cpp > CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.i
+
+CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Render/scalarRenderer.cpp -o CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.s
+
+CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Render/splineExtractor.cpp
+CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o -MF CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o.d -o CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Render/splineExtractor.cpp
+
+CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cianleypoldt/Documents/cpp/emws/src/Render/splineExtractor.cpp > CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.i
+
+CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Render/splineExtractor.cpp -o CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.s
+
+CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Render/splineRenderer.cpp
+CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o -MF CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o.d -o CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Render/splineRenderer.cpp
+
+CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cianleypoldt/Documents/cpp/emws/src/Render/splineRenderer.cpp > CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.i
+
+CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Render/splineRenderer.cpp -o CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.s
+
+CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/gridAllocator.cpp
+CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o -MF CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o.d -o CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/gridAllocator.cpp
+
+CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/gridAllocator.cpp > CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.i
+
+CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/gridAllocator.cpp -o CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.s
+
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.cpp
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o -MF CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o.d -o CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.cpp
+
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.cpp > CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.i
+
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.cpp -o CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.s
+
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdate.cpp
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o -MF CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o.d -o CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdate.cpp
+
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdate.cpp > CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.i
+
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdate.cpp -o CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.s
+
+CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp
+CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o -MF CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o.d -o CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp
+
+CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp > CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.i
+
+CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp -o CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.s
+
 CMakeFiles/emws.dir/src/main.cpp.o: CMakeFiles/emws.dir/flags.make
 CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/main.cpp
 CMakeFiles/emws.dir/src/main.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/emws.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/emws.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/main.cpp.o -MF CMakeFiles/emws.dir/src/main.cpp.o.d -o CMakeFiles/emws.dir/src/main.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/main.cpp
 
 CMakeFiles/emws.dir/src/main.cpp.i: cmake_force
@@ -88,11 +228,31 @@ CMakeFiles/emws.dir/src/main.cpp.s: cmake_force
 
 # Object files for target emws
 emws_OBJECTS = \
+"CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o" \
+"CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o" \
+"CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o" \
+"CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o" \
+"CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o" \
+"CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o" \
+"CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o" \
+"CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o" \
+"CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o" \
+"CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o" \
 "CMakeFiles/emws.dir/src/main.cpp.o"
 
 # External object files for target emws
 emws_EXTERNAL_OBJECTS =
 
+emws: CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o
+emws: CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o
+emws: CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o
+emws: CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o
+emws: CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o
+emws: CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o
+emws: CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o
+emws: CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o
+emws: CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o
+emws: CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o
 emws: CMakeFiles/emws.dir/src/main.cpp.o
 emws: CMakeFiles/emws.dir/build.make
 emws: CMakeFiles/emws.dir/compiler_depend.ts
@@ -100,7 +260,7 @@ emws: /usr/lib/libglm.a
 emws: /usr/lib/libGLX.so
 emws: /usr/lib/libOpenGL.so
 emws: CMakeFiles/emws.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable emws"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable emws"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/emws.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

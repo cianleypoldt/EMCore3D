@@ -2,6 +2,16 @@ emws: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
+  CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o \
+  CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o \
+  CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o \
+  CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o \
+  CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o \
+  CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o \
+  CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o \
+  CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o \
+  CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o \
+  CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o \
   CMakeFiles/emws.dir/src/main.cpp.o \
   /usr/lib/libglm.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libglfw.so \
@@ -45,6 +55,26 @@ emws: \
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
+
+CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o:
+
+CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o:
+
+CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o:
+
+CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o:
+
+CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o:
+
+CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o:
+
+CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o:
+
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o:
+
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o:
+
+CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o:
 
 CMakeFiles/emws.dir/src/main.cpp.o:
 

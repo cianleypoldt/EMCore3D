@@ -2,44 +2,59 @@
 #include "../emfdtd.h"
 #include "yeeGrid.h"
 
+void* aligned_malloc(std::size_t size, std::size_t align) {
+#ifdef _WIN32
+    return _aligned_malloc(size, align);
+#else
+    void* p = nullptr;
+    if (posix_memalign(&p, align, size) != 0) p = nullptr;
+    return p;
+#endif
+}
+
+void aligned_free(void* p) {
+#ifdef _WIN32
+    _aligned_free(p);
+#else
+    free(p);
+#endif
+}
+
 bool YeeGrid::gridAllocate() {
 
-    uint m_magnetic_sample_count = m_grid_dimensions[0] * m_grid_dimensions[1] * m_grid_dimensions[2];
-    uint m_electric_sample_count = (m_grid_dimensions[0] + 1) * (m_grid_dimensions[1] + 1) * (m_grid_dimensions[2] + 1);
-
-    m_memory_size = (m_magnetic_sample_count + m_electric_sample_count) * sizeof(vec3);
-
-    if (emftdt::m_total_heap_allocation + m_memory_size > em_const::MEMORY_CAP) {
-        printf("Grid allocation (%i bytes) exceeds memory cap of %i.\n", (int)m_memory_size, em_const::MEMORY_CAP);
+    if (emftdt::m_total_heap_allocation + m_cell_count * MEM_PER_CELL > em_const::MEMORY_CAP) {
+        printf("Grid allocation (%i bytes) exceeds memory cap of %i.\n", (int)(m_cell_count * MEM_PER_CELL), em_const::MEMORY_CAP);
         return false;
     }
 
-    m_magnetic_field_grid = static_cast<vec3*>(
-        Eigen::aligned_allocator<vec3>().allocate(m_magnetic_sample_count + m_electric_sample_count));
+    grid = aligned_malloc(64, m_cell_count * MEM_PER_CELL);
 
-    if (!m_magnetic_field_grid) {
-        printf("Grid memory allocation of %i was not successful.\n", (int)m_memory_size);
+    if (!grid) {
+        printf("Grid memory allocation of %i bytes was not successful.\n", (int)(m_cell_count * MEM_PER_CELL));
         return false;
     }
 
-    emftdt::m_total_heap_allocation += m_memory_size;
+    std::memset(grid, 0, m_cell_count * MEM_PER_CELL);
 
-    printf("Grid allocated %i bytes. Total memory in use is %i bytes.\n", (int)m_memory_size, (int)emftdt::m_total_heap_allocation);
+    m_Ex = reinterpret_cast<double*>(grid);
+    m_Ey = m_Ex + m_cell_count;
+    m_Ez = m_Ex + 2 * m_cell_count;
 
-    m_electric_field_grid = m_magnetic_field_grid + m_magnetic_sample_count;
+    m_Mx = m_Ex + 3 * m_cell_count;
+    m_My = m_Ex + 4 * m_cell_count;
+    m_Mz = m_Ex + 5 * m_cell_count;
 
-    for (int i = 0; i < m_magnetic_sample_count + m_electric_sample_count; i++) {
-        m_magnetic_field_grid[i] = {0, 0, 0};
-    }
+    emftdt::m_total_heap_allocation += m_cell_count * MEM_PER_CELL;
+
+    printf("Grid allocated %i bytes. Total memory in use is %i bytes.\n", (int)(m_cell_count * MEM_PER_CELL), (int)emftdt::m_total_heap_allocation);
 
     return true;
 }
 
 void YeeGrid::gridDeallocate() {
-    if (!m_magnetic_field_grid) return;
-    Eigen::aligned_allocator<vec3>().destroy(m_magnetic_field_grid);
-    m_magnetic_field_grid = nullptr;
-    m_electric_field_grid = nullptr;
-    emftdt::m_total_heap_allocation -= m_memory_size;
+    if (!grid) return;
+    aligned_free(grid);
+    grid = nullptr;
+    emftdt::m_total_heap_allocation -= m_cell_count * MEM_PER_CELL;
     printf("Grid deallocated.\n");
 }

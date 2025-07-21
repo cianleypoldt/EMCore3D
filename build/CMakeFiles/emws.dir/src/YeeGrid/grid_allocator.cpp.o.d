@@ -1,9 +1,7 @@
-CMakeFiles/emws.dir/src/main.cpp.o: \
- /home/cianleypoldt/Documents/cpp/emws/src/main.cpp \
+CMakeFiles/emws.dir/src/YeeGrid/grid_allocator.cpp.o: \
+ /home/cianleypoldt/Documents/cpp/emws/src/YeeGrid/grid_allocator.cpp \
  /usr/include/stdc-predef.h \
- /home/cianleypoldt/Documents/cpp/emws/src/Simulation/emfdtd.h \
- /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.h \
- /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/../constants.h \
+ /home/cianleypoldt/Documents/cpp/emws/src/YeeGrid/yee_grid.h \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \

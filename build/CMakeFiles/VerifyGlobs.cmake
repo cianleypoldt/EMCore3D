@@ -4,6 +4,16 @@
 # SOURCES at CMakeLists.txt:17 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/home/cianleypoldt/Documents/cpp/emws/src/*.cpp")
 set(OLD_GLOB
+  "/home/cianleypoldt/Documents/cpp/emws/src/Entity/PhysicsSystem/physicsSystem.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Entity/entityManager.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Render/scalarExtractor.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Render/scalarRenderer.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Render/splineExtractor.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Render/splineRenderer.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/gridAllocator.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdate.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp"
   "/home/cianleypoldt/Documents/cpp/emws/src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
