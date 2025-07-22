@@ -8,11 +8,17 @@ class YeeGrid {
     YeeGrid(vec3, double cell_size);
     ~YeeGrid();
 
-    vec3& indexMag(index3 index);
-    vec3& indexEl(index3 index);
-
     YeeGrid(const YeeGrid&) = delete;
     YeeGrid& operator=(const YeeGrid&) = delete;
+
+    inline double& Ex(index3&);
+    inline double& Ey(index3&);
+    inline double& Ez(index3&);
+    inline double& Mx(index3&);
+    inline double& My(index3&);
+    inline double& Mz(index3&);
+    inline double& permeability(index3&);
+    inline double& permittivity(index3&);
 
   private:
     static constexpr uint MEM_PER_CELL = 8 * sizeof(double);
@@ -34,9 +40,24 @@ class YeeGrid {
     double* m_My;
     double* m_Mz;
 
-    double* permittivity;
-    double* permeability;
+    double* m_permittivity;
+    double* m_permeability;
 
     bool gridAllocate();
     void gridDeallocate();
 };
+
+double& YeeGrid::Ex(index3& index) { return m_Ex[index[0] + index[1] * m_grid_dimensions[0] + index[2] * m_grid_dimensions[0] * m_grid_dimensions[1]]; }
+double& YeeGrid::Ey(index3& index) { return m_Ex[index[0] + index[1] * m_grid_dimensions[0] + index[2] * m_grid_dimensions[0] * m_grid_dimensions[1]]; }
+double& YeeGrid::Ez(index3& index) { return m_Ex[index[0] + index[1] * m_grid_dimensions[0] + index[2] * m_grid_dimensions[0] * m_grid_dimensions[1]]; }
+
+double& YeeGrid::Mx(index3& index) { return m_Ex[index[0] + index[1] * m_grid_dimensions[0] + index[2] * m_grid_dimensions[0] * m_grid_dimensions[1]]; }
+double& YeeGrid::My(index3& index) { return m_Ex[index[0] + index[1] * m_grid_dimensions[0] + index[2] * m_grid_dimensions[0] * m_grid_dimensions[1]]; }
+double& YeeGrid::Mz(index3& index) { return m_Ex[index[0] + index[1] * m_grid_dimensions[0] + index[2] * m_grid_dimensions[0] * m_grid_dimensions[1]]; }
+
+double& YeeGrid::permeability(index3& index) {
+    return m_Ex[index[0] + index[1] * m_grid_dimensions[0] + index[2] * m_grid_dimensions[0] * m_grid_dimensions[1]];
+}
+double& YeeGrid::permittivity(index3& index) {
+    return m_Ex[index[0] + index[1] * m_grid_dimensions[0] + index[2] * m_grid_dimensions[0] * m_grid_dimensions[1]];
+}

@@ -30,14 +30,14 @@ bool YeeGrid::gridAllocate() {
     grid = aligned_malloc(64, m_cell_count * MEM_PER_CELL);
 
     if (!grid) {
-        printf("Grid memory allocation of %i bytes was not successful.\n", (int)(m_cell_count * MEM_PER_CELL));
+        printf("Grid memory allocation of %i bytes failed.\n", (int)(m_cell_count * MEM_PER_CELL));
         return false;
     }
 
     std::memset(grid, 0, m_cell_count * MEM_PER_CELL);
 
     m_Ex = reinterpret_cast<double*>(grid);
-    m_Ey = m_Ex + m_cell_count;
+    m_Ey = m_Ex + 1 * m_cell_count;
     m_Ez = m_Ex + 2 * m_cell_count;
 
     m_Mx = m_Ex + 3 * m_cell_count;
