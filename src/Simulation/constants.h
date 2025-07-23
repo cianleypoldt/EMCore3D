@@ -4,8 +4,9 @@
 using vec3 = Eigen::Vector3d;
 using index3 = uint32_t[3];
 using uint = uint32_t;
+using R = double;
 
 namespace em_const {
-constexpr uint MEMORY_CAP = 1000000;
-constexpr double DEFAULT_CUBE_SIZE = 1;
+constexpr uint MEMORY_CAP = 1000000000;
+constexpr R DEFAULT_CUBE_SIZE = 1;
 } // namespace em_const

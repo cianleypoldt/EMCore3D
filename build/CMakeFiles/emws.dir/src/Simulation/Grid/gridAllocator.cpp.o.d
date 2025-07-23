@@ -1,22 +1,6 @@
 CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: \
  /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/gridAllocator.cpp \
  /usr/include/stdc-predef.h \
- /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/../../IO/logger.h \
- /usr/include/stdio.h /usr/include/bits/libc-header-start.h \
- /usr/include/features.h /usr/include/features-time64.h \
- /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
- /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h \
- /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h \
- /usr/include/bits/types.h /usr/include/bits/typesizes.h \
- /usr/include/bits/time64.h /usr/include/bits/types/__fpos_t.h \
- /usr/include/bits/types/__mbstate_t.h \
- /usr/include/bits/types/__fpos64_t.h /usr/include/bits/types/__FILE.h \
- /usr/include/bits/types/FILE.h /usr/include/bits/types/struct_FILE.h \
- /usr/include/bits/types/cookie_io_functions_t.h \
- /usr/include/bits/stdio_lim.h /usr/include/bits/floatn.h \
- /usr/include/bits/floatn-common.h \
  /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/../emfdtd.h \
  /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/../Grid/yeeGrid.h \
  /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/../Grid/../constants.h \
@@ -27,28 +11,37 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: \
  /usr/include/c++/15.1.1/bits/requires_hosted.h \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/os_defines.h \
+ /usr/include/features.h /usr/include/features-time64.h \
+ /usr/include/bits/wordsize.h /usr/include/bits/timesize.h \
+ /usr/include/sys/cdefs.h /usr/include/bits/long-double.h \
+ /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
  /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h \
  /usr/include/c++/15.1.1/pstl/pstl_config.h \
  /usr/include/c++/15.1.1/bits/cpp_type_traits.h \
  /usr/include/c++/15.1.1/bits/version.h \
  /usr/include/c++/15.1.1/type_traits \
  /usr/include/c++/15.1.1/ext/type_traits.h /usr/include/math.h \
+ /usr/include/bits/libc-header-start.h /usr/include/bits/types.h \
+ /usr/include/bits/typesizes.h /usr/include/bits/time64.h \
  /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/bits/floatn.h /usr/include/bits/floatn-common.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h /usr/include/bits/mathcalls-macros.h \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
  /usr/include/bits/iscanonical.h /usr/include/c++/15.1.1/bits/std_abs.h \
- /usr/include/stdlib.h /usr/include/bits/waitflags.h \
- /usr/include/bits/waitstatus.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/sys/types.h \
- /usr/include/bits/types/clock_t.h /usr/include/bits/types/clockid_t.h \
- /usr/include/bits/types/time_t.h /usr/include/bits/types/timer_t.h \
- /usr/include/bits/stdint-intn.h /usr/include/endian.h \
- /usr/include/bits/endian.h /usr/include/bits/endianness.h \
- /usr/include/bits/byteswap.h /usr/include/bits/uintn-identity.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/types/sigset_t.h /usr/include/bits/types/__sigset_t.h \
+ /usr/include/stdlib.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/sys/types.h /usr/include/bits/types/clock_t.h \
+ /usr/include/bits/types/clockid_t.h /usr/include/bits/types/time_t.h \
+ /usr/include/bits/types/timer_t.h /usr/include/bits/stdint-intn.h \
+ /usr/include/endian.h /usr/include/bits/endian.h \
+ /usr/include/bits/endianness.h /usr/include/bits/byteswap.h \
+ /usr/include/bits/uintn-identity.h /usr/include/sys/select.h \
+ /usr/include/bits/select.h /usr/include/bits/types/sigset_t.h \
+ /usr/include/bits/types/__sigset_t.h \
  /usr/include/bits/types/struct_timeval.h \
  /usr/include/bits/types/struct_timespec.h \
  /usr/include/bits/pthreadtypes.h /usr/include/bits/thread-shared-types.h \
@@ -96,9 +89,12 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: \
  /usr/include/c++/15.1.1/iosfwd /usr/include/c++/15.1.1/bits/stringfwd.h \
  /usr/include/c++/15.1.1/bits/memoryfwd.h \
  /usr/include/c++/15.1.1/bits/postypes.h /usr/include/c++/15.1.1/cwchar \
- /usr/include/wchar.h /usr/include/bits/wchar.h \
- /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
- /usr/include/c++/15.1.1/exception \
+ /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h \
+ /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
+ /usr/include/bits/types/mbstate_t.h \
+ /usr/include/bits/types/__mbstate_t.h /usr/include/bits/types/__FILE.h \
+ /usr/include/bits/types/FILE.h /usr/include/c++/15.1.1/exception \
  /usr/include/c++/15.1.1/bits/exception_ptr.h \
  /usr/include/c++/15.1.1/bits/cxxabi_init_exception.h \
  /usr/include/c++/15.1.1/typeinfo \
@@ -148,7 +144,11 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: \
  /usr/include/c++/15.1.1/bits/functional_hash.h \
  /usr/include/c++/15.1.1/bits/string_view.tcc \
  /usr/include/c++/15.1.1/ext/string_conversions.h \
- /usr/include/c++/15.1.1/cstdio /usr/include/c++/15.1.1/cerrno \
+ /usr/include/c++/15.1.1/cstdio /usr/include/stdio.h \
+ /usr/include/bits/types/__fpos_t.h /usr/include/bits/types/__fpos64_t.h \
+ /usr/include/bits/types/struct_FILE.h \
+ /usr/include/bits/types/cookie_io_functions_t.h \
+ /usr/include/bits/stdio_lim.h /usr/include/c++/15.1.1/cerrno \
  /usr/include/errno.h /usr/include/bits/errno.h \
  /usr/include/linux/errno.h /usr/include/asm/errno.h \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
@@ -397,4 +397,35 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
- /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h
+ /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /usr/include/spdlog/spdlog.h /usr/include/spdlog/common.h \
+ /usr/include/spdlog/details/null_mutex.h /usr/include/c++/15.1.1/utility \
+ /usr/include/c++/15.1.1/bits/stl_relops.h /usr/include/spdlog/tweakme.h \
+ /usr/include/c++/15.1.1/chrono /usr/include/c++/15.1.1/bits/chrono.h \
+ /usr/include/c++/15.1.1/ratio /usr/include/c++/15.1.1/ctime \
+ /usr/include/c++/15.1.1/bits/parse_numbers.h \
+ /usr/include/c++/15.1.1/memory \
+ /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/15.1.1/bits/align.h \
+ /usr/include/c++/15.1.1/bits/unique_ptr.h \
+ /usr/include/c++/15.1.1/bits/shared_ptr.h \
+ /usr/include/c++/15.1.1/bits/shared_ptr_base.h \
+ /usr/include/c++/15.1.1/bits/allocated_ptr.h \
+ /usr/include/c++/15.1.1/ext/concurrence.h \
+ /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/15.1.1/backward/auto_ptr.h \
+ /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
+ /usr/include/spdlog/fmt/fmt.h /usr/include/fmt/base.h \
+ /usr/include/fmt/format.h /usr/include/fmt/base.h \
+ /usr/include/spdlog/details/registry.h \
+ /usr/include/spdlog/details/periodic_worker.h \
+ /usr/include/c++/15.1.1/condition_variable \
+ /usr/include/c++/15.1.1/bits/std_mutex.h \
+ /usr/include/c++/15.1.1/bits/unique_lock.h /usr/include/c++/15.1.1/mutex \
+ /usr/include/c++/15.1.1/thread /usr/include/c++/15.1.1/bits/std_thread.h \
+ /usr/include/c++/15.1.1/bits/this_thread_sleep.h \
+ /usr/include/spdlog/details/synchronous_factory.h \
+ /usr/include/spdlog/logger.h /usr/include/spdlog/details/backtracer.h \
+ /usr/include/spdlog/details/circular_q.h \
+ /usr/include/spdlog/details/log_msg_buffer.h \
+ /usr/include/spdlog/details/log_msg.h /usr/include/spdlog/version.h

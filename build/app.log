@@ -1,0 +1,105 @@
+[21:14:24.894] [info] Constructing a grid over 30, 30, 10 meters using 9000 cubes.
+[21:14:24.894] [info] Cell dimensions: 1, 1, 1.
+[21:14:24.894] [debug] Grid allocated 576000 bytes. Total memory in use is 576000 bytes.
+
+[21:14:24.895] [debug] Grid deallocated.
+
+[21:14:36.913] [info] Constructing a grid over 30, 30, 10 meters using 9000 cubes.
+[21:14:36.913] [info] Cell dimensions: 1, 1, 1.
+[21:14:36.913] [debug] Grid allocated 576000 bytes. Total memory in use is 576000 bytes.
+
+[21:14:36.913] [debug] Grid deallocated.
+
+[2025-07-22 21:15:45.849] [info] coloured console + file
+[2025-07-22 21:17:51.725] [info] Constructing a grid over 1, 1, 1 meters using 1 cubes.
+[2025-07-22 21:17:51.725] [info] Cell dimensions: 1, 1, 1.
+[2025-07-22 21:17:51.725] [debug] Grid allocated 64 bytes. Total memory in use is 64 bytes.
+
+[2025-07-22 21:17:51.725] [debug] Grid deallocated.
+
+[2025-07-22 21:41:56.461] [info] Constructing a grid over 1, 1, 1 meters using 1 cubes.
+[2025-07-22 21:41:56.461] [info] Cell dimensions: 1, 1, 1.
+[2025-07-22 21:41:56.461] [debug] Grid allocated 64 bytes. Total memory in use is 64 bytes.
+
+[2025-07-22 21:41:56.461] [debug] Grid deallocated.
+
+[2025-07-22 21:41:57.817] [info] Constructing a grid over 1, 1, 1 meters using 1 cubes.
+[2025-07-22 21:41:57.817] [info] Cell dimensions: 1, 1, 1.
+[2025-07-22 21:41:57.817] [debug] Grid allocated 64 bytes. Total memory in use is 64 bytes.
+
+[2025-07-22 21:41:57.817] [debug] Grid deallocated.
+
+[2025-07-22 21:42:59.349] [info] Constructing a grid over 1, 1, 1 meters using 1 cubes.
+[2025-07-22 21:42:59.349] [info] Cell dimensions: 1, 1, 1.
+[2025-07-22 21:42:59.349] [debug] Grid allocated 64 bytes. Total memory in use is 64 bytes
+[2025-07-22 21:42:59.349] [debug] Grid deallocated
+[2025-07-22 21:43:23.516] [info] Constructing a grid over 1, 1, 1 meters using 1 cubes
+[2025-07-22 21:43:23.516] [info] Cell dimensions: 1, 1, 1
+[2025-07-22 21:43:23.516] [debug] Grid allocated 64 bytes. Total memory in use is 64 bytes
+[2025-07-22 21:43:23.516] [debug] Grid deallocated
+[2025-07-22 21:43:55.903] [info] Constructing a grid over 3, 3, 3 meters using 27 cubes
+[2025-07-22 21:43:55.903] [info] Cell dimensions: 1, 1, 1
+[2025-07-22 21:43:55.903] [debug] Grid allocated 1728 bytes. Total memory in use is 1728 bytes
+[2025-07-22 21:43:55.903] [debug] Grid deallocated
+[2025-07-22 21:44:27.651] [info] Constructing a grid over 3 x 3 x 3 meters using 27 cubes
+[2025-07-22 21:44:27.651] [info] Cell dimensions: 1, 1, 1
+[2025-07-22 21:44:27.651] [debug] Grid allocated 1728 bytes. Total memory in use is 1728 bytes
+[2025-07-22 21:44:27.651] [debug] Grid deallocated
+[2025-07-22 21:44:37.728] [info] Constructing a grid over 3x3x3 meters using 27 cubes
+[2025-07-22 21:44:37.728] [info] Cell dimensions: 1, 1, 1
+[2025-07-22 21:44:37.728] [debug] Grid allocated 1728 bytes. Total memory in use is 1728 bytes
+[2025-07-22 21:44:37.728] [debug] Grid deallocated
+[2025-07-23 08:20:33.391] [info] Constructing a grid over 3x3x3 meters using 27 cubes
+[2025-07-23 08:20:33.391] [info] Cell dimensions: 1, 1, 1
+[2025-07-23 08:20:33.392] [debug] Grid allocated 3456 bytes. Total memory in use is 3456 bytes
+[2025-07-23 08:20:33.392] [debug] Grid deallocated
+[2025-07-23 08:21:00.433] [info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+[2025-07-23 08:21:00.433] [info] Cell dimensions: 1, 1, 1
+[2025-07-23 08:21:00.433] [error] Grid allocation (628864000 bytes) exceeds memory cap of 1000000
+[2025-07-23 08:24:54.481] [info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+[2025-07-23 08:24:54.481] [info] Cell dimensions: 1, 1, 1
+[2025-07-23 08:24:54.481] [error] Grid allocation (628864000 bytes) exceeds memory cap of 1000000
+[2025-07-23 08:25:24.502] [info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+[2025-07-23 08:25:24.502] [info] Cell dimensions: 1, 1, 1
+[2025-07-23 08:25:24.577] [debug] Grid allocated 628864000 bytes. Total memory in use is 628864000 bytes
+[2025-07-23 08:25:24.578] [debug] Grid deallocated
+08:27:24.017] [info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+08:27:24.017] [info] Cell dimensions: 1, 1, 1
+08:27:24.092] [debug] Grid allocated 628864000 bytes. Total memory in use is 628864000 bytes
+08:27:24.093] [debug] Grid deallocated
+[08:27:52.612] [main] [info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+[08:27:52.612] [main] [info] Cell dimensions: 1, 1, 1
+[08:27:52.685] [main] [debug] Grid allocated 628864000 bytes. Total memory in use is 628864000 bytes
+[08:27:52.686] [main] [debug] Grid deallocated
+[08:28:36.693] [main] [info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+
+[08:28:36.694] [main] [info] Cell dimensions: 1, 1, 1
+
+[08:28:36.769] [main] [debug] Grid allocated 628864000 bytes. Total memory in use is 628864000 bytes
+
+[08:28:36.770] [main] [debug] Grid deallocated
+
+[08:28:43.156] [main] [info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+[08:28:43.156] [main] [info] Cell dimensions: 1, 1, 1
+[08:28:43.231] [main] [debug] Grid allocated 628864000 bytes. Total memory in use is 628864000 bytes
+[08:28:43.232] [main] [debug] Grid deallocated
+[info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+[info] Cell dimensions: 1, 1, 1
+[debug] Grid allocated 628864000 bytes. Total memory in use is 628864000 bytes
+[debug] Grid deallocated
+[info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+[info] Cell dimensions: 1, 1, 1
+[debug] Grid allocated 628864000 bytes. Total memory in use is 628864000 bytes
+[debug] Grid deallocated
+[info]: Constructing a grid over 170x170x170 meters using 4913000 cubes
+[info]: Cell dimensions: 1, 1, 1
+[debug]: Grid allocated 628864000 bytes. Total memory in use is 628864000 bytes
+[debug]: Grid deallocated
+[08:36:23.145][info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+[08:36:23.145][info] Cell dimensions: 1, 1, 1
+[08:36:23.218][debug] Grid allocated 628864000 bytes. Total memory in use is 628864000 bytes
+[08:36:23.219][debug] Grid deallocated
+[08:36:35.238] [info] Constructing a grid over 170x170x170 meters using 4913000 cubes
+[08:36:35.238] [info] Cell dimensions: 1, 1, 1
+[08:36:35.317] [debug] Grid allocated 628864000 bytes. Total memory in use is 628864000 bytes
+[08:36:35.319] [debug] Grid deallocated

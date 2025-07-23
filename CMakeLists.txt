@@ -11,6 +11,7 @@ set(CMAKE_CXX_FLAGS_RELEASE "-O3 -march=native -flto -DNDEBUG")
 find_package(glm REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(PkgConfig REQUIRED)
+find_package(spdlog REQUIRED)
 pkg_search_module(GLFW REQUIRED glfw3)
 
 # Recursively gather all .cpp files in src/
@@ -28,5 +29,5 @@ target_link_libraries(${PROJECT_NAME}
         glm::glm
         OpenGL::GL
         ${GLFW_LIBRARIES}
+        spdlog::spdlog
 )
-

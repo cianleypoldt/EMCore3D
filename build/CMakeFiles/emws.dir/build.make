@@ -257,8 +257,10 @@ emws: CMakeFiles/emws.dir/src/main.cpp.o
 emws: CMakeFiles/emws.dir/build.make
 emws: CMakeFiles/emws.dir/compiler_depend.ts
 emws: /usr/lib/libglm.a
+emws: /usr/lib/libspdlog.so.1.15.3
 emws: /usr/lib/libGLX.so
 emws: /usr/lib/libOpenGL.so
+emws: /usr/lib/libfmt.so.11.2.0
 emws: CMakeFiles/emws.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable emws"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/emws.dir/link.txt --verbose=$(VERBOSE)

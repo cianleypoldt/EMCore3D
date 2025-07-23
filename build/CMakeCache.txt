@@ -258,11 +258,17 @@ emws_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 emws_SOURCE_DIR:STATIC=/home/cianleypoldt/Documents/cpp/emws
 
+//The directory containing a CMake configuration file for fmt.
+fmt_DIR:PATH=/usr/lib/cmake/fmt
+
 //The directory containing a CMake configuration file for glm.
 glm_DIR:PATH=/usr/lib/cmake/glm
 
 //Path to a library.
 pkgcfg_lib_GLFW_glfw:FILEPATH=/usr/lib/libglfw.so
+
+//The directory containing a CMake configuration file for spdlog.
+spdlog_DIR:PATH=/usr/lib/cmake/spdlog
 
 
 ########################
@@ -333,6 +339,8 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/cianleypoldt/Documents/cpp/emws
@@ -406,6 +414,8 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/libOpenGL.so][/usr/lib/libGLX.so][/usr/include][ ][v()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/bin/pkg-config][v2.5.1()]
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 GLFW_CFLAGS:INTERNAL=-I/usr/include
 GLFW_CFLAGS_I:INTERNAL=
 GLFW_CFLAGS_OTHER:INTERNAL=

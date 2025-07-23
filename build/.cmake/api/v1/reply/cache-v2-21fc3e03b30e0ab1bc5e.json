@@ -482,6 +482,18 @@
 			"value" : ""
 		},
 		{
+			"name" : "CMAKE_HAVE_LIBC_PTHREAD",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Test CMAKE_HAVE_LIBC_PTHREAD"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
 			"name" : "CMAKE_HOME_DIRECTORY",
 			"properties" : 
 			[
@@ -1068,6 +1080,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[/bin/pkg-config][v2.5.1()]"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Threads"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[TRUE][v()]"
 		},
 		{
 			"name" : "GLFW_CFLAGS",
@@ -1838,6 +1862,18 @@
 			"value" : "/home/cianleypoldt/Documents/cpp/emws"
 		},
 		{
+			"name" : "fmt_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for fmt."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/cmake/fmt"
+		},
+		{
 			"name" : "glm_DIR",
 			"properties" : 
 			[
@@ -1876,6 +1912,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "/usr/lib"
+		},
+		{
+			"name" : "spdlog_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for spdlog."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/cmake/spdlog"
 		}
 	],
 	"kind" : "cache",

@@ -20,7 +20,6 @@ CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o: /home/cianleypoldt/Document
   /usr/include/stdc-predef.h
 
 CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/gridAllocator.cpp \
-  /home/cianleypoldt/Documents/cpp/emws/src/IO/logger.h \
   /home/cianleypoldt/Documents/cpp/emws/src/Simulation/constants.h \
   /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.h \
   /home/cianleypoldt/Documents/cpp/emws/src/Simulation/emfdtd.h \
@@ -116,10 +115,13 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/c++/15.1.1/algorithm \
   /usr/include/c++/15.1.1/array \
   /usr/include/c++/15.1.1/atomic \
+  /usr/include/c++/15.1.1/backward/auto_ptr.h \
   /usr/include/c++/15.1.1/backward/binders.h \
   /usr/include/c++/15.1.1/bit \
   /usr/include/c++/15.1.1/bits/algorithmfwd.h \
+  /usr/include/c++/15.1.1/bits/align.h \
   /usr/include/c++/15.1.1/bits/alloc_traits.h \
+  /usr/include/c++/15.1.1/bits/allocated_ptr.h \
   /usr/include/c++/15.1.1/bits/allocator.h \
   /usr/include/c++/15.1.1/bits/atomic_base.h \
   /usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h \
@@ -129,6 +131,7 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/c++/15.1.1/bits/basic_string.tcc \
   /usr/include/c++/15.1.1/bits/char_traits.h \
   /usr/include/c++/15.1.1/bits/charconv.h \
+  /usr/include/c++/15.1.1/bits/chrono.h \
   /usr/include/c++/15.1.1/bits/concept_check.h \
   /usr/include/c++/15.1.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.1.1/bits/cxxabi_forced.h \
@@ -160,16 +163,22 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/c++/15.1.1/bits/ostream.h \
   /usr/include/c++/15.1.1/bits/ostream.tcc \
   /usr/include/c++/15.1.1/bits/ostream_insert.h \
+  /usr/include/c++/15.1.1/bits/parse_numbers.h \
   /usr/include/c++/15.1.1/bits/postypes.h \
   /usr/include/c++/15.1.1/bits/predefined_ops.h \
   /usr/include/c++/15.1.1/bits/ptr_traits.h \
   /usr/include/c++/15.1.1/bits/range_access.h \
   /usr/include/c++/15.1.1/bits/refwrap.h \
   /usr/include/c++/15.1.1/bits/requires_hosted.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr_base.h \
   /usr/include/c++/15.1.1/bits/specfun.h \
   /usr/include/c++/15.1.1/bits/sstream.tcc \
   /usr/include/c++/15.1.1/bits/std_abs.h \
   /usr/include/c++/15.1.1/bits/std_function.h \
+  /usr/include/c++/15.1.1/bits/std_mutex.h \
+  /usr/include/c++/15.1.1/bits/std_thread.h \
   /usr/include/c++/15.1.1/bits/stl_algo.h \
   /usr/include/c++/15.1.1/bits/stl_algobase.h \
   /usr/include/c++/15.1.1/bits/stl_bvector.h \
@@ -180,6 +189,8 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.1.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/15.1.1/bits/stl_pair.h \
+  /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/15.1.1/bits/stl_relops.h \
   /usr/include/c++/15.1.1/bits/stl_tempbuf.h \
   /usr/include/c++/15.1.1/bits/stl_uninitialized.h \
   /usr/include/c++/15.1.1/bits/stl_vector.h \
@@ -187,7 +198,10 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/c++/15.1.1/bits/streambuf_iterator.h \
   /usr/include/c++/15.1.1/bits/string_view.tcc \
   /usr/include/c++/15.1.1/bits/stringfwd.h \
+  /usr/include/c++/15.1.1/bits/this_thread_sleep.h \
   /usr/include/c++/15.1.1/bits/uniform_int_dist.h \
+  /usr/include/c++/15.1.1/bits/unique_lock.h \
+  /usr/include/c++/15.1.1/bits/unique_ptr.h \
   /usr/include/c++/15.1.1/bits/unordered_map.h \
   /usr/include/c++/15.1.1/bits/uses_allocator.h \
   /usr/include/c++/15.1.1/bits/uses_allocator_args.h \
@@ -197,17 +211,20 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/c++/15.1.1/cassert \
   /usr/include/c++/15.1.1/cctype \
   /usr/include/c++/15.1.1/cerrno \
+  /usr/include/c++/15.1.1/chrono \
   /usr/include/c++/15.1.1/climits \
   /usr/include/c++/15.1.1/clocale \
   /usr/include/c++/15.1.1/cmath \
   /usr/include/c++/15.1.1/compare \
   /usr/include/c++/15.1.1/complex \
   /usr/include/c++/15.1.1/concepts \
+  /usr/include/c++/15.1.1/condition_variable \
   /usr/include/c++/15.1.1/cstddef \
   /usr/include/c++/15.1.1/cstdint \
   /usr/include/c++/15.1.1/cstdio \
   /usr/include/c++/15.1.1/cstdlib \
   /usr/include/c++/15.1.1/cstring \
+  /usr/include/c++/15.1.1/ctime \
   /usr/include/c++/15.1.1/cwchar \
   /usr/include/c++/15.1.1/cwctype \
   /usr/include/c++/15.1.1/debug/assertions.h \
@@ -216,6 +233,7 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/c++/15.1.1/ext/aligned_buffer.h \
   /usr/include/c++/15.1.1/ext/alloc_traits.h \
   /usr/include/c++/15.1.1/ext/atomicity.h \
+  /usr/include/c++/15.1.1/ext/concurrence.h \
   /usr/include/c++/15.1.1/ext/numeric_traits.h \
   /usr/include/c++/15.1.1/ext/string_conversions.h \
   /usr/include/c++/15.1.1/ext/type_traits.h \
@@ -225,11 +243,15 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/c++/15.1.1/iosfwd \
   /usr/include/c++/15.1.1/istream \
   /usr/include/c++/15.1.1/limits \
+  /usr/include/c++/15.1.1/memory \
+  /usr/include/c++/15.1.1/mutex \
   /usr/include/c++/15.1.1/new \
   /usr/include/c++/15.1.1/ostream \
   /usr/include/c++/15.1.1/pstl/execution_defs.h \
   /usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
   /usr/include/c++/15.1.1/pstl/pstl_config.h \
+  /usr/include/c++/15.1.1/ratio \
   /usr/include/c++/15.1.1/sstream \
   /usr/include/c++/15.1.1/stdexcept \
   /usr/include/c++/15.1.1/stdlib.h \
@@ -237,6 +259,7 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/c++/15.1.1/string \
   /usr/include/c++/15.1.1/string_view \
   /usr/include/c++/15.1.1/system_error \
+  /usr/include/c++/15.1.1/thread \
   /usr/include/c++/15.1.1/tr1/bessel_function.tcc \
   /usr/include/c++/15.1.1/tr1/beta_function.tcc \
   /usr/include/c++/15.1.1/tr1/ell_integral.tcc \
@@ -253,6 +276,7 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/c++/15.1.1/type_traits \
   /usr/include/c++/15.1.1/typeinfo \
   /usr/include/c++/15.1.1/unordered_map \
+  /usr/include/c++/15.1.1/utility \
   /usr/include/c++/15.1.1/vector \
   /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
@@ -453,6 +477,8 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/fmt/base.h \
+  /usr/include/fmt/format.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/limits.h \
@@ -466,6 +492,20 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/spdlog/common.h \
+  /usr/include/spdlog/details/backtracer.h \
+  /usr/include/spdlog/details/circular_q.h \
+  /usr/include/spdlog/details/log_msg.h \
+  /usr/include/spdlog/details/log_msg_buffer.h \
+  /usr/include/spdlog/details/null_mutex.h \
+  /usr/include/spdlog/details/periodic_worker.h \
+  /usr/include/spdlog/details/registry.h \
+  /usr/include/spdlog/details/synchronous_factory.h \
+  /usr/include/spdlog/fmt/fmt.h \
+  /usr/include/spdlog/logger.h \
+  /usr/include/spdlog/spdlog.h \
+  /usr/include/spdlog/tweakme.h \
+  /usr/include/spdlog/version.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
@@ -490,7 +530,6 @@ CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o: /home/cianleypoldt/
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xmmintrin.h
 
 CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.cpp \
-  /home/cianleypoldt/Documents/cpp/emws/src/IO/logger.h \
   /home/cianleypoldt/Documents/cpp/emws/src/Simulation/constants.h \
   /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.h \
   /usr/include/alloca.h \
@@ -585,10 +624,13 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/c++/15.1.1/algorithm \
   /usr/include/c++/15.1.1/array \
   /usr/include/c++/15.1.1/atomic \
+  /usr/include/c++/15.1.1/backward/auto_ptr.h \
   /usr/include/c++/15.1.1/backward/binders.h \
   /usr/include/c++/15.1.1/bit \
   /usr/include/c++/15.1.1/bits/algorithmfwd.h \
+  /usr/include/c++/15.1.1/bits/align.h \
   /usr/include/c++/15.1.1/bits/alloc_traits.h \
+  /usr/include/c++/15.1.1/bits/allocated_ptr.h \
   /usr/include/c++/15.1.1/bits/allocator.h \
   /usr/include/c++/15.1.1/bits/atomic_base.h \
   /usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h \
@@ -598,6 +640,7 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/c++/15.1.1/bits/basic_string.tcc \
   /usr/include/c++/15.1.1/bits/char_traits.h \
   /usr/include/c++/15.1.1/bits/charconv.h \
+  /usr/include/c++/15.1.1/bits/chrono.h \
   /usr/include/c++/15.1.1/bits/concept_check.h \
   /usr/include/c++/15.1.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.1.1/bits/cxxabi_forced.h \
@@ -629,16 +672,22 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/c++/15.1.1/bits/ostream.h \
   /usr/include/c++/15.1.1/bits/ostream.tcc \
   /usr/include/c++/15.1.1/bits/ostream_insert.h \
+  /usr/include/c++/15.1.1/bits/parse_numbers.h \
   /usr/include/c++/15.1.1/bits/postypes.h \
   /usr/include/c++/15.1.1/bits/predefined_ops.h \
   /usr/include/c++/15.1.1/bits/ptr_traits.h \
   /usr/include/c++/15.1.1/bits/range_access.h \
   /usr/include/c++/15.1.1/bits/refwrap.h \
   /usr/include/c++/15.1.1/bits/requires_hosted.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr_base.h \
   /usr/include/c++/15.1.1/bits/specfun.h \
   /usr/include/c++/15.1.1/bits/sstream.tcc \
   /usr/include/c++/15.1.1/bits/std_abs.h \
   /usr/include/c++/15.1.1/bits/std_function.h \
+  /usr/include/c++/15.1.1/bits/std_mutex.h \
+  /usr/include/c++/15.1.1/bits/std_thread.h \
   /usr/include/c++/15.1.1/bits/stl_algo.h \
   /usr/include/c++/15.1.1/bits/stl_algobase.h \
   /usr/include/c++/15.1.1/bits/stl_bvector.h \
@@ -649,6 +698,8 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.1.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/15.1.1/bits/stl_pair.h \
+  /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/15.1.1/bits/stl_relops.h \
   /usr/include/c++/15.1.1/bits/stl_tempbuf.h \
   /usr/include/c++/15.1.1/bits/stl_uninitialized.h \
   /usr/include/c++/15.1.1/bits/stl_vector.h \
@@ -656,7 +707,10 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/c++/15.1.1/bits/streambuf_iterator.h \
   /usr/include/c++/15.1.1/bits/string_view.tcc \
   /usr/include/c++/15.1.1/bits/stringfwd.h \
+  /usr/include/c++/15.1.1/bits/this_thread_sleep.h \
   /usr/include/c++/15.1.1/bits/uniform_int_dist.h \
+  /usr/include/c++/15.1.1/bits/unique_lock.h \
+  /usr/include/c++/15.1.1/bits/unique_ptr.h \
   /usr/include/c++/15.1.1/bits/unordered_map.h \
   /usr/include/c++/15.1.1/bits/uses_allocator.h \
   /usr/include/c++/15.1.1/bits/uses_allocator_args.h \
@@ -666,17 +720,20 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/c++/15.1.1/cassert \
   /usr/include/c++/15.1.1/cctype \
   /usr/include/c++/15.1.1/cerrno \
+  /usr/include/c++/15.1.1/chrono \
   /usr/include/c++/15.1.1/climits \
   /usr/include/c++/15.1.1/clocale \
   /usr/include/c++/15.1.1/cmath \
   /usr/include/c++/15.1.1/compare \
   /usr/include/c++/15.1.1/complex \
   /usr/include/c++/15.1.1/concepts \
+  /usr/include/c++/15.1.1/condition_variable \
   /usr/include/c++/15.1.1/cstddef \
   /usr/include/c++/15.1.1/cstdint \
   /usr/include/c++/15.1.1/cstdio \
   /usr/include/c++/15.1.1/cstdlib \
   /usr/include/c++/15.1.1/cstring \
+  /usr/include/c++/15.1.1/ctime \
   /usr/include/c++/15.1.1/cwchar \
   /usr/include/c++/15.1.1/cwctype \
   /usr/include/c++/15.1.1/debug/assertions.h \
@@ -685,6 +742,7 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/c++/15.1.1/ext/aligned_buffer.h \
   /usr/include/c++/15.1.1/ext/alloc_traits.h \
   /usr/include/c++/15.1.1/ext/atomicity.h \
+  /usr/include/c++/15.1.1/ext/concurrence.h \
   /usr/include/c++/15.1.1/ext/numeric_traits.h \
   /usr/include/c++/15.1.1/ext/string_conversions.h \
   /usr/include/c++/15.1.1/ext/type_traits.h \
@@ -694,11 +752,15 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/c++/15.1.1/iosfwd \
   /usr/include/c++/15.1.1/istream \
   /usr/include/c++/15.1.1/limits \
+  /usr/include/c++/15.1.1/memory \
+  /usr/include/c++/15.1.1/mutex \
   /usr/include/c++/15.1.1/new \
   /usr/include/c++/15.1.1/ostream \
   /usr/include/c++/15.1.1/pstl/execution_defs.h \
   /usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
   /usr/include/c++/15.1.1/pstl/pstl_config.h \
+  /usr/include/c++/15.1.1/ratio \
   /usr/include/c++/15.1.1/sstream \
   /usr/include/c++/15.1.1/stdexcept \
   /usr/include/c++/15.1.1/stdlib.h \
@@ -706,6 +768,7 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/c++/15.1.1/string \
   /usr/include/c++/15.1.1/string_view \
   /usr/include/c++/15.1.1/system_error \
+  /usr/include/c++/15.1.1/thread \
   /usr/include/c++/15.1.1/tr1/bessel_function.tcc \
   /usr/include/c++/15.1.1/tr1/beta_function.tcc \
   /usr/include/c++/15.1.1/tr1/ell_integral.tcc \
@@ -722,6 +785,7 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/c++/15.1.1/type_traits \
   /usr/include/c++/15.1.1/typeinfo \
   /usr/include/c++/15.1.1/unordered_map \
+  /usr/include/c++/15.1.1/utility \
   /usr/include/c++/15.1.1/vector \
   /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
@@ -922,6 +986,8 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/fmt/base.h \
+  /usr/include/fmt/format.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/limits.h \
@@ -935,6 +1001,20 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: /home/cianleypoldt/Docume
   /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/spdlog/common.h \
+  /usr/include/spdlog/details/backtracer.h \
+  /usr/include/spdlog/details/circular_q.h \
+  /usr/include/spdlog/details/log_msg.h \
+  /usr/include/spdlog/details/log_msg_buffer.h \
+  /usr/include/spdlog/details/null_mutex.h \
+  /usr/include/spdlog/details/periodic_worker.h \
+  /usr/include/spdlog/details/registry.h \
+  /usr/include/spdlog/details/synchronous_factory.h \
+  /usr/include/spdlog/fmt/fmt.h \
+  /usr/include/spdlog/logger.h \
+  /usr/include/spdlog/spdlog.h \
+  /usr/include/spdlog/tweakme.h \
+  /usr/include/spdlog/version.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
@@ -1526,10 +1606,13 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/c++/15.1.1/algorithm \
   /usr/include/c++/15.1.1/array \
   /usr/include/c++/15.1.1/atomic \
+  /usr/include/c++/15.1.1/backward/auto_ptr.h \
   /usr/include/c++/15.1.1/backward/binders.h \
   /usr/include/c++/15.1.1/bit \
   /usr/include/c++/15.1.1/bits/algorithmfwd.h \
+  /usr/include/c++/15.1.1/bits/align.h \
   /usr/include/c++/15.1.1/bits/alloc_traits.h \
+  /usr/include/c++/15.1.1/bits/allocated_ptr.h \
   /usr/include/c++/15.1.1/bits/allocator.h \
   /usr/include/c++/15.1.1/bits/atomic_base.h \
   /usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h \
@@ -1539,6 +1622,7 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/c++/15.1.1/bits/basic_string.tcc \
   /usr/include/c++/15.1.1/bits/char_traits.h \
   /usr/include/c++/15.1.1/bits/charconv.h \
+  /usr/include/c++/15.1.1/bits/chrono.h \
   /usr/include/c++/15.1.1/bits/concept_check.h \
   /usr/include/c++/15.1.1/bits/cpp_type_traits.h \
   /usr/include/c++/15.1.1/bits/cxxabi_forced.h \
@@ -1570,16 +1654,22 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/c++/15.1.1/bits/ostream.h \
   /usr/include/c++/15.1.1/bits/ostream.tcc \
   /usr/include/c++/15.1.1/bits/ostream_insert.h \
+  /usr/include/c++/15.1.1/bits/parse_numbers.h \
   /usr/include/c++/15.1.1/bits/postypes.h \
   /usr/include/c++/15.1.1/bits/predefined_ops.h \
   /usr/include/c++/15.1.1/bits/ptr_traits.h \
   /usr/include/c++/15.1.1/bits/range_access.h \
   /usr/include/c++/15.1.1/bits/refwrap.h \
   /usr/include/c++/15.1.1/bits/requires_hosted.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h \
+  /usr/include/c++/15.1.1/bits/shared_ptr_base.h \
   /usr/include/c++/15.1.1/bits/specfun.h \
   /usr/include/c++/15.1.1/bits/sstream.tcc \
   /usr/include/c++/15.1.1/bits/std_abs.h \
   /usr/include/c++/15.1.1/bits/std_function.h \
+  /usr/include/c++/15.1.1/bits/std_mutex.h \
+  /usr/include/c++/15.1.1/bits/std_thread.h \
   /usr/include/c++/15.1.1/bits/stl_algo.h \
   /usr/include/c++/15.1.1/bits/stl_algobase.h \
   /usr/include/c++/15.1.1/bits/stl_bvector.h \
@@ -1590,6 +1680,8 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/15.1.1/bits/stl_iterator_base_types.h \
   /usr/include/c++/15.1.1/bits/stl_pair.h \
+  /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/15.1.1/bits/stl_relops.h \
   /usr/include/c++/15.1.1/bits/stl_tempbuf.h \
   /usr/include/c++/15.1.1/bits/stl_uninitialized.h \
   /usr/include/c++/15.1.1/bits/stl_vector.h \
@@ -1597,7 +1689,10 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/c++/15.1.1/bits/streambuf_iterator.h \
   /usr/include/c++/15.1.1/bits/string_view.tcc \
   /usr/include/c++/15.1.1/bits/stringfwd.h \
+  /usr/include/c++/15.1.1/bits/this_thread_sleep.h \
   /usr/include/c++/15.1.1/bits/uniform_int_dist.h \
+  /usr/include/c++/15.1.1/bits/unique_lock.h \
+  /usr/include/c++/15.1.1/bits/unique_ptr.h \
   /usr/include/c++/15.1.1/bits/unordered_map.h \
   /usr/include/c++/15.1.1/bits/uses_allocator.h \
   /usr/include/c++/15.1.1/bits/uses_allocator_args.h \
@@ -1607,17 +1702,20 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/c++/15.1.1/cassert \
   /usr/include/c++/15.1.1/cctype \
   /usr/include/c++/15.1.1/cerrno \
+  /usr/include/c++/15.1.1/chrono \
   /usr/include/c++/15.1.1/climits \
   /usr/include/c++/15.1.1/clocale \
   /usr/include/c++/15.1.1/cmath \
   /usr/include/c++/15.1.1/compare \
   /usr/include/c++/15.1.1/complex \
   /usr/include/c++/15.1.1/concepts \
+  /usr/include/c++/15.1.1/condition_variable \
   /usr/include/c++/15.1.1/cstddef \
   /usr/include/c++/15.1.1/cstdint \
   /usr/include/c++/15.1.1/cstdio \
   /usr/include/c++/15.1.1/cstdlib \
   /usr/include/c++/15.1.1/cstring \
+  /usr/include/c++/15.1.1/ctime \
   /usr/include/c++/15.1.1/cwchar \
   /usr/include/c++/15.1.1/cwctype \
   /usr/include/c++/15.1.1/debug/assertions.h \
@@ -1626,6 +1724,7 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/c++/15.1.1/ext/aligned_buffer.h \
   /usr/include/c++/15.1.1/ext/alloc_traits.h \
   /usr/include/c++/15.1.1/ext/atomicity.h \
+  /usr/include/c++/15.1.1/ext/concurrence.h \
   /usr/include/c++/15.1.1/ext/numeric_traits.h \
   /usr/include/c++/15.1.1/ext/string_conversions.h \
   /usr/include/c++/15.1.1/ext/type_traits.h \
@@ -1635,11 +1734,15 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/c++/15.1.1/iosfwd \
   /usr/include/c++/15.1.1/istream \
   /usr/include/c++/15.1.1/limits \
+  /usr/include/c++/15.1.1/memory \
+  /usr/include/c++/15.1.1/mutex \
   /usr/include/c++/15.1.1/new \
   /usr/include/c++/15.1.1/ostream \
   /usr/include/c++/15.1.1/pstl/execution_defs.h \
   /usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
   /usr/include/c++/15.1.1/pstl/pstl_config.h \
+  /usr/include/c++/15.1.1/ratio \
   /usr/include/c++/15.1.1/sstream \
   /usr/include/c++/15.1.1/stdexcept \
   /usr/include/c++/15.1.1/stdlib.h \
@@ -1647,6 +1750,7 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/c++/15.1.1/string \
   /usr/include/c++/15.1.1/string_view \
   /usr/include/c++/15.1.1/system_error \
+  /usr/include/c++/15.1.1/thread \
   /usr/include/c++/15.1.1/tr1/bessel_function.tcc \
   /usr/include/c++/15.1.1/tr1/beta_function.tcc \
   /usr/include/c++/15.1.1/tr1/ell_integral.tcc \
@@ -1663,6 +1767,7 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/c++/15.1.1/type_traits \
   /usr/include/c++/15.1.1/typeinfo \
   /usr/include/c++/15.1.1/unordered_map \
+  /usr/include/c++/15.1.1/utility \
   /usr/include/c++/15.1.1/vector \
   /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h \
   /usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h \
@@ -1863,6 +1968,8 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/errno.h \
   /usr/include/features-time64.h \
   /usr/include/features.h \
+  /usr/include/fmt/base.h \
+  /usr/include/fmt/format.h \
   /usr/include/gnu/stubs-64.h \
   /usr/include/gnu/stubs.h \
   /usr/include/limits.h \
@@ -1876,6 +1983,28 @@ CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/ma
   /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/sched.h \
+  /usr/include/spdlog/common.h \
+  /usr/include/spdlog/details/backtracer.h \
+  /usr/include/spdlog/details/circular_q.h \
+  /usr/include/spdlog/details/console_globals.h \
+  /usr/include/spdlog/details/file_helper.h \
+  /usr/include/spdlog/details/log_msg.h \
+  /usr/include/spdlog/details/log_msg_buffer.h \
+  /usr/include/spdlog/details/null_mutex.h \
+  /usr/include/spdlog/details/periodic_worker.h \
+  /usr/include/spdlog/details/registry.h \
+  /usr/include/spdlog/details/synchronous_factory.h \
+  /usr/include/spdlog/fmt/fmt.h \
+  /usr/include/spdlog/formatter.h \
+  /usr/include/spdlog/logger.h \
+  /usr/include/spdlog/sinks/ansicolor_sink.h \
+  /usr/include/spdlog/sinks/base_sink.h \
+  /usr/include/spdlog/sinks/rotating_file_sink.h \
+  /usr/include/spdlog/sinks/sink.h \
+  /usr/include/spdlog/sinks/stdout_color_sinks.h \
+  /usr/include/spdlog/spdlog.h \
+  /usr/include/spdlog/tweakme.h \
+  /usr/include/spdlog/version.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdint.h \
   /usr/include/stdio.h \
@@ -1920,9 +2049,11 @@ emws: /usr/lib/Scrt1.o \
   /usr/lib/libXdmcp.so.6 \
   /usr/lib/libc.so.6 \
   /usr/lib/libc_nonshared.a \
+  /usr/lib/libfmt.so.11.2.0 \
   /usr/lib/libglm.a \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
+  /usr/lib/libspdlog.so.1.15.3 \
   /usr/lib/libxcb.so.1 \
   CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o \
   CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o \
@@ -1937,23 +2068,25 @@ emws: /usr/lib/Scrt1.o \
   CMakeFiles/emws.dir/src/main.cpp.o
 
 
-CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o:
+CMakeFiles/emws.dir/src/main.cpp.o:
 
 CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o:
 
-CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o:
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o:
 
-CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o:
+CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o:
 
-/usr/lib/libmvec.so.1:
+CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o:
+
+/usr/lib/libxcb.so.1:
+
+/usr/lib/libspdlog.so.1.15.3:
 
 /usr/lib/libm.so.6:
 
 /usr/lib/libc_nonshared.a:
 
-/usr/lib/libc.so.6:
-
-/usr/lib/libXdmcp.so.6:
+/usr/lib/libXau.so.6:
 
 /usr/lib/libX11.so.6:
 
@@ -1961,1008 +2094,1106 @@ CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o:
 
 /usr/lib/libGLdispatch.so.0:
 
-/usr/lib/libm.so:
-
-/usr/lib/libgcc_s.so.1:
-
-/usr/lib/crtn.o:
-
-/usr/lib/crti.o:
-
-/usr/lib/Scrt1.o:
-
-/home/cianleypoldt/Documents/cpp/emws/src/main.cpp:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdate.cpp:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.cpp:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xmmintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdint.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/emmintrin.h:
-
-/usr/include/time.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/strings.h:
-
-/usr/include/string.h:
-
-/usr/include/stdlib.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/linux/stddef.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/errno.h:
-
-/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
-
-/usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
-
-/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
-
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
-
-/usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
-
-/usr/include/eigen3/Eigen/src/misc/Kernel.h:
-
-/usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
-
-/usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
-
-/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
-
-/usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
-
-/usr/include/math.h:
-
-/usr/include/eigen3/Eigen/src/LU/FullPivLU.h:
-
-/usr/include/eigen3/Eigen/src/LU/Determinant.h:
-
-/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
-
-/usr/include/eigen3/Eigen/src/Householder/Householder.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mm_malloc.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
-
-CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/Memory.h:
-
-/usr/include/sys/single_threaded.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/Macros.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/MKL_support.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Translation.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/Constants.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
-
-/usr/include/sys/types.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
-
-/usr/lib/ld-linux-x86-64.so.2:
-
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h:
-
-/usr/include/eigen3/Eigen/src/Core/Visitor.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
-
-/usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h:
-
-/usr/include/pthread.h:
-
-/usr/include/eigen3/Eigen/src/misc/Image.h:
-
-/usr/include/eigen3/Eigen/src/Core/StlIterators.h:
-
-/usr/include/eigen3/Eigen/src/Core/StableNorm.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
-
-/usr/include/eigen3/Eigen/src/Core/SolverBase.h:
-
-/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
-
-/usr/include/eigen3/Eigen/src/Core/Solve.h:
-
-/usr/include/eigen3/Eigen/src/Core/Reshaped.h:
-
-/usr/include/eigen3/Eigen/src/Core/Redux.h:
-
-/usr/include/eigen3/Eigen/src/Core/Random.h:
-
-/usr/include/eigen3/Eigen/src/Core/Product.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h:
-
-/usr/include/eigen3/Eigen/src/Core/NumTraits.h:
-
-/usr/include/eigen3/Eigen/src/Core/NoAlias.h:
-
-/usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
-
-/usr/include/eigen3/Eigen/src/Core/Inverse.h:
-
-/usr/include/eigen3/Eigen/src/Core/IO.h:
-
-/usr/include/features-time64.h:
-
-/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
-
-/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
-
-/usr/include/eigen3/Eigen/src/Core/EigenBase.h:
-
-/usr/include/eigen3/Eigen/src/Core/Dot.h:
-
-/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
-
-/usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:
-
-/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
-
-/usr/include/eigen3/Eigen/src/Core/Map.h:
-
-/usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
-
-/usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h:
-
-/usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
-
-/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
-
-/usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
-
-/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
-
-CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o:
-
-/usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
-
-/usr/include/eigen3/Eigen/QR:
-
-/usr/include/eigen3/Eigen/src/Core/Transpositions.h:
-
-/usr/include/eigen3/Eigen/LU:
-
-CMakeFiles/emws.dir/src/main.cpp.o:
-
-/usr/include/eigen3/Eigen/Jacobi:
-
-/usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
-
-/usr/include/eigen3/Eigen/Geometry:
-
-/usr/include/eigen3/Eigen/Eigenvalues:
-
-/usr/include/bits/posix2_lim.h:
-
-/usr/include/c++/15.1.1/vector:
-
-/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:
-
-/usr/include/c++/15.1.1/bits/cpp_type_traits.h:
-
-/usr/include/c++/15.1.1/bits/charconv.h:
-
-/usr/include/c++/15.1.1/bits/basic_ios.tcc:
-
-/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
-
-/usr/include/c++/15.1.1/bits/basic_ios.h:
-
-/usr/include/bits/uintn-identity.h:
-
-/usr/include/c++/15.1.1/bit:
-
-/usr/include/c++/15.1.1/backward/binders.h:
-
-/usr/include/c++/15.1.1/algorithm:
-
-/usr/include/c++/15.1.1/ext/string_conversions.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
-
-/usr/include/bits/xopen_lim.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
-
-/usr/include/eigen3/Eigen/src/Core/MapBase.h:
-
-/usr/include/bits/timesize.h:
-
-/usr/include/c++/15.1.1/bits/std_function.h:
-
-/usr/include/c++/15.1.1/iosfwd:
-
-/usr/include/bits/types/struct_tm.h:
-
-/usr/include/stdio.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/c++/15.1.1/bits/allocator.h:
-
-/usr/include/bits/types/struct_timespec.h:
-
-/usr/include/c++/15.1.1/clocale:
-
-/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
-
-/usr/include/bits/waitflags.h:
-
-/usr/include/ctype.h:
-
-/usr/lib/libGLX.so:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-CMakeFiles/emws.dir/src/Entity/entityManager.cpp.o:
-
-/usr/include/c++/15.1.1/bits/enable_special_members.h:
-
-/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
-
-/usr/include/c++/15.1.1/bits/string_view.tcc:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/usr/include/bits/struct_rwlock.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
-
-/usr/include/c++/15.1.1/bits/stl_algobase.h:
-
-/usr/include/c++/15.1.1/exception:
-
-/usr/include/c++/15.1.1/bits/memory_resource.h:
-
-/usr/include/c++/15.1.1/bits/basic_string.h:
-
-/usr/include/bits/types/sigset_t.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
-
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/bits/types/clock_t.h:
-
-/usr/lib/libgcc_s.so:
-
-/usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
-
-/usr/include/eigen3/Eigen/src/Core/Matrix.h:
-
-/usr/include/c++/15.1.1/debug/debug.h:
-
-/usr/include/bits/types/__locale_t.h:
-
-/usr/include/c++/15.1.1/bits/uses_allocator_args.h:
-
-/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
-
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/c++/15.1.1/bits/ostream_insert.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h:
-
-/usr/include/c++/15.1.1/new:
-
-/usr/include/linux/posix_types.h:
-
-/usr/include/bits/types/FILE.h:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp:
-
-/usr/include/bits/flt-eval-method.h:
-
-/usr/include/linux/sched/types.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
-
-/usr/include/c++/15.1.1/bits/basic_string.tcc:
-
-/usr/include/c++/15.1.1/bits/postypes.h:
-
-/usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
-
-/usr/include/bits/types.h:
-
-CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o:
-
-/usr/include/eigen3/Eigen/src/Core/Reverse.h:
-
-/usr/include/c++/15.1.1/complex:
-
-/usr/include/eigen3/Eigen/src/Core/Replicate.h:
-
-/usr/include/c++/15.1.1/array:
-
-/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
-
-/usr/include/bits/timex.h:
-
-/usr/include/c++/15.1.1/limits:
-
-/usr/include/eigen3/Eigen/src/Core/Diagonal.h:
-
-/usr/include/c++/15.1.1/bits/algorithmfwd.h:
-
-/usr/include/eigen3/Eigen/src/Core/Assign.h:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Entity/PhysicsSystem/physicsSystem.cpp:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Render/splineExtractor.cpp:
-
-/usr/include/c++/15.1.1/bits/hashtable.h:
-
-/usr/include/bits/time64.h:
-
-/usr/include/bits/stdlib-float.h:
-
-/usr/lib/libstdc++.so:
-
-/usr/include/locale.h:
-
-/usr/include/c++/15.1.1/bits/memoryfwd.h:
-
-/usr/include/bits/thread-shared-types.h:
-
-/usr/include/bits/struct_mutex.h:
-
-/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/bits/typesizes.h:
-
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
-
-/usr/include/bits/cpu-set.h:
-
-/usr/include/c++/15.1.1/bits/stl_bvector.h:
-
-/usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
-
-/usr/include/eigen3/Eigen/src/Core/DenseBase.h:
-
-/usr/include/eigen3/Eigen/Householder:
-
-/usr/include/assert.h:
-
-/usr/include/c++/15.1.1/debug/assertions.h:
-
-/usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/limits.h:
-
-/usr/include/eigen3/Eigen/src/Core/Stride.h:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
-
-/usr/include/c++/15.1.1/cerrno:
-
-/usr/include/asm-generic/posix_types.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
-
-/usr/include/eigen3/Eigen/src/SVD/SVDBase.h:
-
-/usr/include/c++/15.1.1/cstdlib:
-
-CMakeFiles/emws.dir/src/Entity/PhysicsSystem/physicsSystem.cpp.o:
-
-/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:
-
-/usr/include/bits/floatn.h:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Entity/entityManager.cpp:
-
-/usr/include/alloca.h:
-
-/usr/include/bits/stdint-least.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/usr/include/c++/15.1.1/bits/stl_algo.h:
-
-/usr/include/c++/15.1.1/type_traits:
-
-/usr/include/c++/15.1.1/bits/cxxabi_init_exception.h:
-
-/usr/include/c++/15.1.1/atomic:
-
-/usr/include/bits/types/locale_t.h:
-
-/usr/include/bits/byteswap.h:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/gridAllocator.cpp:
-
-/usr/include/asm/types.h:
-
-/usr/include/c++/15.1.1/bits/alloc_traits.h:
-
-/usr/include/bits/atomic_wide_counter.h:
-
-/usr/include/c++/15.1.1/bits/localefwd.h:
-
-/usr/lib/libXau.so.6:
-
-/usr/include/c++/15.1.1/pstl/pstl_config.h:
-
-/usr/include/c++/15.1.1/bits/functexcept.h:
-
-/usr/include/c++/15.1.1/bits/istream.tcc:
-
-/usr/include/bits/local_lim.h:
-
-/usr/include/linux/errno.h:
-
-/usr/include/c++/15.1.1/bits/unordered_map.h:
-
-/usr/include/c++/15.1.1/concepts:
-
-/usr/include/c++/15.1.1/tr1/legendre_function.tcc:
-
-/usr/include/bits/locale.h:
-
-/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
-
-/usr/include/c++/15.1.1/bits/concept_check.h:
-
-/usr/include/asm/posix_types_64.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
-
-/usr/include/c++/15.1.1/bits/sstream.tcc:
-
-/usr/include/bits/time.h:
-
-/usr/include/asm/posix_types.h:
-
-/usr/lib/libglfw.so:
-
-/usr/lib/libc.so:
-
-/usr/include/bits/pthreadtypes.h:
-
-/usr/include/c++/15.1.1/ext/atomicity.h:
-
-/usr/include/bits/mathcalls-macros.h:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Render/scalarRenderer.cpp:
-
-/usr/include/bits/uio_lim.h:
-
-/usr/include/bits/math-vector.h:
-
-/usr/lib/libxcb.so.1:
-
-/usr/include/bits/endian.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:
-
-/usr/include/c++/15.1.1/bits/stl_iterator.h:
-
-/usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
-
-/usr/include/bits/types/struct_FILE.h:
-
-/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Simulation/emfdtd.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Render/splineRenderer.cpp:
-
-/usr/include/c++/15.1.1/bits/locale_classes.tcc:
-
-/usr/include/c++/15.1.1/bits/stl_function.h:
-
-/home/cianleypoldt/Documents/cpp/emws/src/IO/logger.h:
-
-/usr/include/bits/pthread_stack_min-dynamic.h:
-
-/usr/include/c++/15.1.1/bits/node_handle.h:
-
-/usr/include/asm-generic/errno.h:
-
-/usr/include/bits/fp-logb.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h:
-
-/usr/include/limits.h:
-
-/usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
-
-/usr/include/c++/15.1.1/bits/char_traits.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/Meta.h:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Simulation/constants.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/bits/libm-simd-decl-stubs.h:
-
-/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
-
-/usr/include/bits/floatn-common.h:
-
-/usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
-
-/usr/include/c++/15.1.1/bits/erase_if.h:
-
-/usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h:
-
-/usr/include/bits/long-double.h:
-
-/usr/include/bits/iscanonical.h:
-
-/usr/include/c++/15.1.1/string_view:
-
-/usr/include/c++/15.1.1/bits/atomic_base.h:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Render/scalarExtractor.cpp:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/c++/15.1.1/bits/cxxabi_forced.h:
-
-/usr/include/bits/types/time_t.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
-
-/usr/include/eigen3/Eigen/src/Core/NestByValue.h:
-
-/usr/include/eigen3/Eigen/src/Core/BooleanRedux.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/c++/15.1.1/bits/stl_vector.h:
-
-/usr/include/c++/15.1.1/cwctype:
-
-/usr/include/bits/types/timer_t.h:
-
-/usr/include/c++/15.1.1/string:
-
-/usr/include/c++/15.1.1/bits/functional_hash.h:
-
-/usr/include/eigen3/Eigen/src/Core/Array.h:
-
-/usr/include/c++/15.1.1/tr1/riemann_zeta.tcc:
-
-/usr/include/wctype.h:
-
-/usr/include/sched.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
-
-/usr/include/bits/fp-fast.h:
-
-/usr/include/c++/15.1.1/tr1/ell_integral.tcc:
-
-/usr/include/wchar.h:
-
-/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
-
-/usr/include/bits/posix1_lim.h:
-
-/usr/include/c++/15.1.1/bits/exception_ptr.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h:
-
-/usr/include/eigen3/Eigen/src/Core/ReturnByValue.h:
-
-/usr/include/bits/types/wint_t.h:
-
-/usr/include/eigen3/Eigen/Core:
-
-/usr/include/bits/types/cookie_io_functions_t.h:
-
-/usr/include/asm/errno.h:
-
-/usr/include/bits/stdint-uintn.h:
-
-/usr/include/eigen3/Eigen/src/Core/Transpose.h:
-
-/usr/include/c++/15.1.1/system_error:
-
-/usr/lib/libglm.a:
-
-/usr/include/features.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/c++/15.1.1/ext/numeric_traits.h:
-
-/usr/include/bits/sched.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
-
-/usr/include/eigen3/Eigen/src/Core/IndexedView.h:
-
-/usr/include/bits/select.h:
-
-/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
-
-/usr/include/c++/15.1.1/cwchar:
-
-/usr/include/bits/waitstatus.h:
-
-/usr/include/bits/wchar.h:
-
-/usr/include/bits/types/struct___jmp_buf_tag.h:
-
-/usr/include/bits/setjmp.h:
-
-/usr/include/bits/types/error_t.h:
-
-/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
-
-/usr/include/c++/15.1.1/bits/locale_classes.h:
-
-/usr/include/bits/types/struct_timeval.h:
-
-/usr/include/c++/15.1.1/bits/hash_bytes.h:
-
-/usr/include/c++/15.1.1/bits/hashtable_policy.h:
-
-/usr/include/c++/15.1.1/bits/ios_base.h:
-
-/usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
-
-/usr/include/c++/15.1.1/cassert:
-
-/usr/include/c++/15.1.1/bits/locale_facets.h:
-
-/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
-
-/usr/include/c++/15.1.1/bits/streambuf.tcc:
-
-/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:
-
-/usr/include/c++/15.1.1/bits/invoke.h:
-
-/usr/include/c++/15.1.1/bits/locale_facets.tcc:
-
-/usr/include/c++/15.1.1/bits/move.h:
-
-/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
-
-/usr/include/c++/15.1.1/bits/stl_heap.h:
-
-/usr/include/eigen3/Eigen/src/Core/GeneralProduct.h:
-
-/usr/include/c++/15.1.1/bits/nested_exception.h:
-
-/usr/include/c++/15.1.1/bits/new_allocator.h:
-
-/usr/include/c++/15.1.1/bits/ostream.h:
-
-/usr/include/c++/15.1.1/bits/ostream.tcc:
-
-/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.h:
-
-/usr/include/c++/15.1.1/ext/type_traits.h:
-
-/usr/include/c++/15.1.1/bits/predefined_ops.h:
-
-/usr/include/c++/15.1.1/ostream:
-
-/usr/include/c++/15.1.1/bits/ptr_traits.h:
-
-/usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h:
-
-/usr/include/c++/15.1.1/istream:
-
-/usr/include/bits/mathcalls.h:
-
-/usr/include/c++/15.1.1/bits/refwrap.h:
-
-/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:
-
-/usr/include/c++/15.1.1/bits/exception.h:
-
-/usr/include/bits/errno.h:
-
-/usr/include/c++/15.1.1/bits/requires_hosted.h:
-
-/usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:
-
-/usr/include/c++/15.1.1/bits/specfun.h:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/c++/15.1.1/bits/std_abs.h:
-
-/usr/include/c++/15.1.1/bits/streambuf_iterator.h:
-
-/usr/include/c++/15.1.1/bits/stl_iterator_base_types.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
-
-/usr/include/c++/15.1.1/bits/stl_tempbuf.h:
-
-/usr/include/c++/15.1.1/bits/stl_uninitialized.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/c++/15.1.1/bits/stringfwd.h:
-
-/usr/include/c++/15.1.1/bits/uniform_int_dist.h:
-
-/usr/include/c++/15.1.1/bits/uses_allocator.h:
-
-/usr/include/c++/15.1.1/bits/utility.h:
-
-/usr/include/bits/types/__mbstate_t.h:
-
-/usr/include/c++/15.1.1/tr1/bessel_function.tcc:
-
-/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
-
-/usr/include/eigen3/Eigen/src/Core/Block.h:
-
-/usr/include/c++/15.1.1/bits/vector.tcc:
-
-/usr/include/c++/15.1.1/bits/version.h:
-
-/usr/include/eigen3/Eigen/src/Core/Swap.h:
-
-/usr/include/c++/15.1.1/cctype:
-
-/usr/include/eigen3/Eigen/src/Core/Select.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
-
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mmintrin.h:
-
-/usr/include/c++/15.1.1/climits:
-
-/usr/include/c++/15.1.1/cmath:
-
-/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
-
-/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
-
-/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
-
-/usr/include/c++/15.1.1/compare:
-
-/usr/include/bits/pthreadtypes-arch.h:
-
-/usr/include/c++/15.1.1/bits/stl_pair.h:
-
-/usr/include/c++/15.1.1/cstddef:
-
-/usr/include/eigen3/Eigen/Cholesky:
-
-/usr/include/eigen3/Eigen/src/Core/Ref.h:
-
-/usr/include/asm/bitsperlong.h:
-
-/usr/include/c++/15.1.1/cstdint:
-
-/usr/include/c++/15.1.1/cstdio:
-
-/usr/include/c++/15.1.1/cstring:
-
-/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
-
-/usr/include/c++/15.1.1/ext/aligned_buffer.h:
-
-/usr/include/c++/15.1.1/ext/alloc_traits.h:
-
-/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
-
-/usr/include/bits/wctype-wchar.h:
-
-/usr/include/c++/15.1.1/functional:
-
-/usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
-
-/usr/include/c++/15.1.1/initializer_list:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
-
-/usr/include/c++/15.1.1/ios:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
-
-/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
-
-/usr/include/c++/15.1.1/pstl/execution_defs.h:
-
-/usr/include/c++/15.1.1/sstream:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o:
-
-/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
-
-/usr/include/c++/15.1.1/stdexcept:
-
-CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o:
-
-/usr/include/c++/15.1.1/stdlib.h:
-
-/usr/include/c++/15.1.1/bits/exception_defines.h:
-
-/usr/include/c++/15.1.1/streambuf:
-
-/usr/include/bits/types/__fpos_t.h:
-
-/usr/include/c++/15.1.1/tr1/beta_function.tcc:
-
-/usr/include/c++/15.1.1/tr1/exp_integral.tcc:
+/usr/include/c++/15.1.1/tr1/gamma.tcc:
 
 /usr/include/bits/mathcalls-narrow.h:
 
-/usr/include/c++/15.1.1/tr1/gamma.tcc:
+/usr/include/c++/15.1.1/tr1/beta_function.tcc:
+
+/usr/include/bits/types/__fpos_t.h:
+
+/usr/include/c++/15.1.1/bits/sstream.tcc:
+
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:
+
+/usr/include/c++/15.1.1/bits/exception_defines.h:
+
+/usr/include/c++/15.1.1/stdlib.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o:
+
+/usr/include/c++/15.1.1/sstream:
+
+/usr/include/c++/15.1.1/pstl/execution_defs.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexEigenSolver.h:
+
+/usr/include/c++/15.1.1/ios:
+
+/usr/include/c++/15.1.1/initializer_list:
+
+/usr/include/eigen3/Eigen/src/Core/CoreIterators.h:
+
+/usr/include/c++/15.1.1/mutex:
+
+/usr/include/c++/15.1.1/ext/concurrence.h:
+
+/usr/include/c++/15.1.1/ext/alloc_traits.h:
+
+/usr/include/c++/15.1.1/cstring:
+
+/usr/include/asm/bitsperlong.h:
+
+/usr/include/c++/15.1.1/cstddef:
+
+/usr/include/c++/15.1.1/bits/stl_pair.h:
+
+/usr/include/bits/pthreadtypes-arch.h:
+
+/usr/include/spdlog/details/log_msg.h:
+
+/usr/include/c++/15.1.1/condition_variable:
+
+/usr/include/c++/15.1.1/cmath:
+
+/usr/include/spdlog/details/log_msg_buffer.h:
+
+/usr/include/c++/15.1.1/climits:
+
+/usr/include/eigen3/Eigen/src/Core/Swap.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/EigenSolver.h:
+
+/usr/include/c++/15.1.1/bits/version.h:
+
+/usr/include/c++/15.1.1/bits/vector.tcc:
+
+/usr/include/eigen3/Eigen/src/Core/Block.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Transform.h:
+
+/usr/include/c++/15.1.1/bits/utility.h:
+
+/usr/include/c++/15.1.1/bits/uses_allocator.h:
+
+CMakeFiles/emws.dir/src/Render/scalarExtractor.cpp.o:
+
+/usr/include/c++/15.1.1/bits/stringfwd.h:
+
+/usr/include/c++/15.1.1/functional:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
+
+/usr/include/c++/15.1.1/bits/stl_tempbuf.h:
 
 /usr/include/eigen3/Eigen/SVD:
 
-/usr/include/c++/15.1.1/bits/stl_construct.h:
+/usr/include/c++/15.1.1/bits/shared_ptr_atomic.h:
 
-/usr/include/c++/15.1.1/tr1/hypergeometric.tcc:
+/usr/include/eigen3/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h:
 
-/usr/include/c++/15.1.1/tr1/modified_bessel_func.tcc:
+/usr/include/c++/15.1.1/bits/stl_relops.h:
+
+/usr/include/c++/15.1.1/bits/ostream_insert.h:
+
+/usr/include/c++/15.1.1/bits/stl_iterator_base_types.h:
+
+/usr/include/eigen3/Eigen/src/Core/EigenBase.h:
+
+/usr/include/c++/15.1.1/bits/std_abs.h:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/c++/15.1.1/memory:
+
+/usr/include/c++/15.1.1/bits/specfun.h:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.cpp:
+
+/usr/include/c++/15.1.1/pstl/glue_memory_defs.h:
+
+/usr/include/c++/15.1.1/bits/predefined_ops.h:
+
+/usr/include/c++/15.1.1/compare:
+
+/usr/include/eigen3/Eigen/src/SVD/JacobiSVD.h:
 
 /usr/include/c++/15.1.1/tr1/poly_hermite.tcc:
 
-/usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
+/usr/include/eigen3/Eigen/src/SVD/UpperBidiagonalization.h:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+/usr/include/c++/15.1.1/bits/requires_hosted.h:
 
-/usr/include/c++/15.1.1/tr1/special_function_util.h:
+/usr/include/bits/errno.h:
 
-/usr/include/c++/15.1.1/tuple:
+/usr/include/c++/15.1.1/bits/exception.h:
 
-/usr/include/c++/15.1.1/tr1/poly_laguerre.tcc:
+/usr/include/eigen3/Eigen/src/Core/VectorBlock.h:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
+/usr/include/c++/15.1.1/bits/refwrap.h:
 
-/usr/include/c++/15.1.1/typeinfo:
+/usr/include/bits/mathcalls.h:
 
-/usr/include/c++/15.1.1/unordered_map:
+/usr/include/c++/15.1.1/bits/atomic_lockfree_defines.h:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+/usr/include/bits/types/__mbstate_t.h:
 
-/usr/include/gnu/stubs-64.h:
+/usr/include/eigen3/Eigen/Dense:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+/usr/include/c++/15.1.1/bits/ptr_traits.h:
 
-/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
+CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
+/usr/include/c++/15.1.1/ostream:
 
-/usr/include/sys/select.h:
+/usr/include/c++/15.1.1/ctime:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
+/home/cianleypoldt/Documents/cpp/emws/src/Entity/entityManager.cpp:
 
-/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+/usr/include/c++/15.1.1/ext/type_traits.h:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.h:
+
+/usr/include/c++/15.1.1/bits/ostream.tcc:
+
+/usr/include/c++/15.1.1/bits/ostream.h:
+
+/usr/include/c++/15.1.1/bits/new_allocator.h:
+
+/usr/include/eigen3/Eigen/src/Core/GeneralProduct.h:
+
+/usr/include/c++/15.1.1/bits/stl_heap.h:
+
+/usr/lib/libglm.a:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Homogeneous.h:
+
+/usr/include/c++/15.1.1/bits/locale_facets.tcc:
+
+/usr/include/c++/15.1.1/bits/invoke.h:
+
+/usr/include/eigen3/Eigen/src/Core/DenseStorage.h:
+
+/usr/include/c++/15.1.1/thread:
+
+/usr/include/c++/15.1.1/bits/streambuf.tcc:
+
+/usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h:
+
+/usr/include/c++/15.1.1/cassert:
+
+/usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h:
+
+/usr/include/c++/15.1.1/bits/ios_base.h:
+
+/usr/include/spdlog/tweakme.h:
+
+/usr/include/c++/15.1.1/bits/hashtable_policy.h:
+
+/usr/include/c++/15.1.1/bits/exception_ptr.h:
+
+/usr/include/spdlog/details/synchronous_factory.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/bits/struct_rwlock.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/c++/15.1.1/ext/numeric_traits.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h:
 
 /usr/include/c++/15.1.1/bits/range_access.h:
 
-/usr/include/eigen3/Eigen/Dense:
+/usr/include/bits/types/error_t.h:
+
+/usr/include/spdlog/details/file_helper.h:
+
+/usr/include/bits/setjmp.h:
+
+/usr/include/bits/types/struct___jmp_buf_tag.h:
+
+/usr/include/bits/wchar.h:
+
+/usr/include/bits/waitstatus.h:
+
+/usr/include/c++/15.1.1/bits/basic_string.tcc:
+
+/usr/include/eigen3/Eigen/src/Geometry/RotationBase.h:
+
+/usr/include/c++/15.1.1/cstdint:
+
+/usr/include/linux/sched/types.h:
+
+/usr/include/c++/15.1.1/ratio:
+
+/usr/include/eigen3/Eigen/src/QR/ColPivHouseholderQR.h:
+
+/usr/include/c++/15.1.1/cwchar:
+
+/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h:
+
+/usr/include/bits/select.h:
+
+/usr/include/spdlog/sinks/stdout_color_sinks.h:
+
+/usr/include/eigen3/Eigen/src/Core/IndexedView.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h:
+
+/usr/include/c++/15.1.1/system_error:
+
+/usr/include/eigen3/Eigen/src/Core/Transpose.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/OrthoMethods.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/include/bits/pthread_stack_min-dynamic.h:
+
+/usr/include/wchar.h:
+
+/usr/include/c++/15.1.1/tr1/ell_integral.tcc:
+
+/usr/lib/libc.so.6:
+
+/usr/include/c++/15.1.1/bits/streambuf_iterator.h:
+
+/usr/include/bits/fp-fast.h:
+
+/usr/include/sched.h:
+
+/usr/include/wctype.h:
+
+/usr/include/c++/15.1.1/bits/postypes.h:
+
+/usr/include/bits/types/timer_t.h:
+
+/usr/include/c++/15.1.1/cwctype:
+
+/usr/include/c++/15.1.1/bits/stl_vector.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/15.1.1/tr1/hypergeometric.tcc:
+
+/usr/include/eigen3/Eigen/src/Core/NestByValue.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/c++/15.1.1/bits/cxxabi_forced.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/c++/15.1.1/tr1/bessel_function.tcc:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Render/scalarExtractor.cpp:
+
+/usr/include/bits/iscanonical.h:
+
+/usr/include/c++/15.1.1/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/15.1.1/bits/erase_if.h:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h:
+
+/usr/include/bits/floatn-common.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h:
+
+/usr/include/eigen3/Eigen/src/SVD/BDCSVD.h:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Simulation/constants.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Meta.h:
+
+/usr/include/c++/15.1.1/bits/allocated_ptr.h:
+
+/usr/include/bits/byteswap.h:
+
+/usr/include/eigen3/Eigen/src/QR/CompleteOrthogonalDecomposition.h:
+
+/usr/include/c++/15.1.1/pstl/glue_algorithm_defs.h:
+
+/usr/include/gnu/stubs.h:
+
+/usr/include/c++/15.1.1/bits/stl_function.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+/usr/include/c++/15.1.1/bits/locale_classes.tcc:
+
+/usr/include/limits.h:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Render/splineRenderer.cpp:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h:
+
+/usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h:
+
+/usr/include/bits/types/struct_FILE.h:
+
+/usr/include/c++/15.1.1/bits/stl_iterator.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/eigen3/Eigen/src/Core/PlainObjectBase.h:
+
+/usr/include/bits/uio_lim.h:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Render/scalarRenderer.cpp:
+
+/usr/include/bits/mathcalls-macros.h:
+
+/usr/include/c++/15.1.1/ext/atomicity.h:
+
+/usr/include/bits/pthreadtypes.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/lib/libc.so:
+
+/usr/include/c++/15.1.1/tr1/exp_integral.tcc:
+
+/usr/lib/libglfw.so:
+
+/usr/include/c++/15.1.1/chrono:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++config.h:
+
+/usr/include/asm/posix_types.h:
+
+/usr/include/asm/posix_types_64.h:
+
+/usr/include/c++/15.1.1/bits/concept_check.h:
+
+/usr/include/bits/locale.h:
+
+/usr/include/c++/15.1.1/tr1/legendre_function.tcc:
+
+/usr/include/c++/15.1.1/concepts:
+
+/usr/include/c++/15.1.1/bits/unordered_map.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/c++/15.1.1/bits/stl_construct.h:
+
+/usr/include/c++/15.1.1/tr1/poly_laguerre.tcc:
+
+/usr/include/c++/15.1.1/pstl/pstl_config.h:
+
+/usr/include/c++/15.1.1/bits/localefwd.h:
+
+/usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/15.1.1/bits/alloc_traits.h:
+
+/usr/include/c++/15.1.1/bits/hash_bytes.h:
+
+/usr/include/spdlog/details/registry.h:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/gridAllocator.cpp:
+
+/usr/include/bits/types/locale_t.h:
+
+CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o:
+
+/usr/include/c++/15.1.1/atomic:
+
+/usr/include/endian.h:
+
+/usr/include/stdint.h:
+
+/usr/include/bits/stdint-least.h:
+
+/usr/include/alloca.h:
+
+/usr/include/c++/15.1.1/bits/locale_classes.h:
+
+/usr/include/c++/15.1.1/bits/parse_numbers.h:
+
+/usr/include/eigen3/Eigen/src/Core/SolveTriangular.h:
+
+/usr/include/bits/floatn.h:
+
+/usr/include/eigen3/Eigen/src/Householder/HouseholderSequence.h:
+
+/usr/include/c++/15.1.1/cstdlib:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/include/c++/15.1.1/cerrno:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/include/assert.h:
+
+/usr/include/eigen3/Eigen/Householder:
+
+/usr/include/eigen3/Eigen/src/SVD/SVDBase.h:
+
+/usr/include/eigen3/Eigen/src/Core/DenseBase.h:
+
+/usr/include/c++/15.1.1/ext/aligned_buffer.h:
+
+/usr/include/eigen3/Eigen/src/QR/FullPivHouseholderQR.h:
+
+/usr/include/c++/15.1.1/bits/stl_bvector.h:
+
+/usr/include/bits/cpu-set.h:
+
+/usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h:
+
+/usr/include/bits/typesizes.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h:
+
+/usr/include/bits/libm-simd-decl-stubs.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/bits/struct_mutex.h:
+
+/usr/include/bits/thread-shared-types.h:
+
+/usr/include/c++/15.1.1/bits/memoryfwd.h:
+
+/usr/include/locale.h:
+
+/usr/lib/libstdc++.so:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/bits/time64.h:
+
+/usr/include/c++/15.1.1/bits/hashtable.h:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Render/splineExtractor.cpp:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Entity/PhysicsSystem/physicsSystem.cpp:
+
+/usr/include/eigen3/Eigen/src/Core/Assign.h:
+
+/usr/include/eigen3/Eigen/src/Core/Diagonal.h:
+
+/usr/include/c++/15.1.1/limits:
+
+/usr/include/c++/15.1.1/array:
+
+/usr/include/c++/15.1.1/bits/algorithmfwd.h:
+
+/usr/include/eigen3/Eigen/src/Core/Replicate.h:
+
+/usr/include/c++/15.1.1/complex:
+
+/usr/include/eigen3/Eigen/src/Core/Reverse.h:
+
+/usr/include/spdlog/fmt/fmt.h:
+
+/usr/include/bits/types.h:
+
+/usr/include/eigen3/Eigen/src/Core/TriangularMatrix.h:
+
+/usr/include/bits/flt-eval-method.h:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp:
+
+/usr/include/bits/types/FILE.h:
+
+/usr/include/linux/posix_types.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h:
+
+/usr/include/c++/15.1.1/new:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/syslimits.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h:
+
+/usr/include/c++/15.1.1/bits/uses_allocator_args.h:
+
+/usr/include/bits/types/__locale_t.h:
+
+/usr/include/c++/15.1.1/debug/debug.h:
+
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h:
+
+/usr/lib/libgcc_s.so:
+
+/usr/include/bits/types/clock_t.h:
+
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/AngleAxis.h:
+
+/usr/include/bits/types/sigset_t.h:
+
+/usr/include/c++/15.1.1/bits/memory_resource.h:
+
+/usr/include/eigen3/Eigen/src/Core/Ref.h:
+
+/usr/include/c++/15.1.1/bits/stl_algobase.h:
+
+/usr/include/c++/15.1.1/cctype:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h:
+
+/usr/include/c++/15.1.1/bits/this_thread_sleep.h:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mmintrin.h:
+
+/usr/include/c++/15.1.1/bits/unique_lock.h:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h:
+
+/usr/include/c++/15.1.1/bits/string_view.tcc:
+
+/usr/include/c++/15.1.1/bits/enable_special_members.h:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/eigen3/Eigen/src/Core/PermutationMatrix.h:
+
+/usr/lib/libGLX.so:
+
+/usr/include/bits/waitflags.h:
+
+/usr/include/c++/15.1.1/bits/move.h:
+
+/usr/include/eigen3/Eigen/src/Core/CoreEvaluators.h:
+
+/usr/include/c++/15.1.1/string:
+
+/usr/include/c++/15.1.1/clocale:
+
+/usr/include/bits/types/struct_timespec.h:
+
+/usr/include/c++/15.1.1/bits/basic_string.h:
+
+/usr/include/spdlog/sinks/ansicolor_sink.h:
+
+/usr/include/c++/15.1.1/bits/allocator.h:
+
+/usr/include/bits/wordsize.h:
+
+/usr/include/stdio.h:
+
+/usr/include/c++/15.1.1/streambuf:
+
+/usr/include/bits/types/struct_tm.h:
+
+/usr/include/spdlog/version.h:
+
+/usr/include/bits/types/wint_t.h:
+
+/usr/include/asm/types.h:
+
+/usr/include/eigen3/Eigen/Core:
+
+/usr/lib/libXdmcp.so.6:
+
+/usr/include/eigen3/Eigen/src/Core/ReturnByValue.h:
+
+/usr/include/c++/15.1.1/bits/std_function.h:
+
+/usr/include/bits/timesize.h:
+
+/usr/include/eigen3/Eigen/src/Core/MapBase.h:
+
+/usr/include/bits/xopen_lim.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h:
+
+/usr/include/c++/15.1.1/ext/string_conversions.h:
+
+/usr/include/c++/15.1.1/algorithm:
+
+/usr/include/c++/15.1.1/bits/unique_ptr.h:
+
+/usr/include/c++/15.1.1/backward/binders.h:
+
+/usr/include/c++/15.1.1/bit:
+
+/usr/include/bits/uintn-identity.h:
+
+/usr/include/c++/15.1.1/bits/basic_ios.h:
+
+/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:
+
+/usr/include/c++/15.1.1/bits/basic_ios.tcc:
+
+/usr/include/eigen3/Eigen/src/Core/BooleanRedux.h:
+
+/usr/include/c++/15.1.1/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/15.1.1/bits/chrono.h:
+
+/usr/include/c++/15.1.1/istream:
+
+/usr/include/eigen3/Eigen/src/Core/BandMatrix.h:
+
+/usr/include/c++/15.1.1/bits/align.h:
+
+/usr/include/c++/15.1.1/bits/charconv.h:
+
+/usr/include/c++/15.1.1/bits/cpp_type_traits.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Scaling.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:
+
+/usr/include/bits/posix2_lim.h:
+
+/usr/include/c++/15.1.1/bits/istream.tcc:
+
+/usr/include/c++/15.1.1/backward/auto_ptr.h:
+
+/usr/include/c++/15.1.1/tr1/riemann_zeta.tcc:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/limits.h:
+
+/usr/include/eigen3/Eigen/src/Core/Array.h:
+
+/usr/include/c++/15.1.1/tr1/special_function_util.h:
+
+/usr/include/spdlog/sinks/base_sink.h:
+
+/usr/include/c++/15.1.1/vector:
+
+/usr/include/c++/15.1.1/tuple:
+
+/usr/include/c++/15.1.1/type_traits:
+
+/usr/lib/libfmt.so.11.2.0:
+
+/usr/include/c++/15.1.1/unordered_map:
+
+/usr/include/c++/15.1.1/utility:
+
+/usr/include/eigen3/Eigen/LU:
+
+/usr/include/bits/local_lim.h:
+
+/usr/include/eigen3/Eigen/src/Core/Transpositions.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/atomic_word.h:
+
+/usr/include/c++/15.1.1/bits/functional_hash.h:
+
+/usr/include/eigen3/Eigen/src/Core/Select.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++allocator.h:
+
+/usr/include/c++/15.1.1/bits/shared_ptr.h:
+
+/usr/include/c++/15.1.1/bits/char_traits.h:
+
+/usr/include/eigen3/Eigen/src/Core/CommaInitializer.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/cpu_defines.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_base.h:
+
+/usr/include/gnu/stubs-64.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/ctype_inline.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/HessenbergDecomposition.h:
+
+/usr/include/c++/15.1.1/bits/stl_uninitialized.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/error_constants.h:
+
+/usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/include/c++/15.1.1/bits/stl_algo.h:
+
+/usr/include/c++/15.1.1/exception:
+
+/usr/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h:
+
+/usr/include/c++/15.1.1/bits/cxxabi_init_exception.h:
+
+/usr/include/ctype.h:
+
+/usr/include/eigen3/Eigen/Cholesky:
+
+/usr/include/bits/timex.h:
+
+/usr/include/eigen3/Eigen/Eigenvalues:
+
+/usr/include/eigen3/Eigen/Geometry:
+
+/usr/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h:
+
+/usr/include/eigen3/Eigen/Jacobi:
+
+/usr/include/eigen3/Eigen/QR:
+
+/usr/include/c++/15.1.1/bits/functexcept.h:
+
+/usr/include/eigen3/Eigen/src/Cholesky/LDLT.h:
+
+/usr/include/c++/15.1.1/bits/atomic_base.h:
+
+/usr/include/eigen3/Eigen/src/Cholesky/LLT.h:
+
+/usr/include/eigen3/Eigen/src/Core/ArithmeticSequence.h:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Simulation/emfdtd.h:
+
+/usr/include/eigen3/Eigen/src/Core/GlobalFunctions.h:
+
+/usr/include/eigen3/Eigen/src/Core/ArrayBase.h:
+
+/usr/include/eigen3/Eigen/src/Core/ArrayWrapper.h:
+
+/usr/include/c++/15.1.1/debug/assertions.h:
+
+/usr/include/eigen3/Eigen/src/Core/ConditionEstimator.h:
+
+/usr/include/eigen3/Eigen/src/Core/Map.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h:
+
+/usr/include/eigen3/Eigen/src/Core/CwiseUnaryView.h:
+
+/usr/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h:
+
+/usr/include/eigen3/Eigen/src/Core/DiagonalMatrix.h:
+
+/usr/include/fmt/format.h:
+
+/usr/include/eigen3/Eigen/src/Core/DiagonalProduct.h:
+
+/usr/include/eigen3/Eigen/src/Core/Dot.h:
+
+/usr/include/eigen3/Eigen/src/Core/Fuzzy.h:
+
+/usr/include/spdlog/details/circular_q.h:
+
+/usr/include/eigen3/Eigen/src/Core/GenericPacketMath.h:
+
+/usr/include/features-time64.h:
+
+CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o:
+
+/usr/include/eigen3/Eigen/src/Core/IO.h:
+
+/usr/include/eigen3/Eigen/src/Core/Inverse.h:
+
+/usr/include/eigen3/Eigen/src/Core/NoAlias.h:
+
+/usr/include/eigen3/Eigen/src/Core/NumTraits.h:
+
+/usr/include/eigen3/Eigen/src/Core/Product.h:
+
+/usr/include/eigen3/Eigen/src/Core/Random.h:
+
+/usr/include/eigen3/Eigen/src/Core/Redux.h:
+
+/usr/include/eigen3/Eigen/src/Core/Reshaped.h:
+
+/usr/include/c++/15.1.1/bits/std_mutex.h:
+
+/usr/include/eigen3/Eigen/src/Core/Solve.h:
+
+/usr/include/eigen3/Eigen/src/Core/SolverBase.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h:
+
+CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o:
+
+/usr/include/eigen3/Eigen/src/Core/StableNorm.h:
+
+/usr/include/c++/15.1.1/stdexcept:
+
+/usr/include/bits/long-double.h:
+
+/usr/include/eigen3/Eigen/src/Core/StlIterators.h:
+
+/usr/include/eigen3/Eigen/src/misc/Image.h:
+
+/usr/include/pthread.h:
+
+/usr/include/eigen3/Eigen/src/Core/VectorwiseOp.h:
+
+/usr/include/eigen3/Eigen/src/Core/Visitor.h:
+
+/usr/include/c++/15.1.1/bits/node_handle.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h:
+
+/usr/include/fmt/base.h:
+
+/usr/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h:
+
+/usr/lib/ld-linux-x86-64.so.2:
+
+/usr/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h:
+
+/usr/include/c++/15.1.1/bits/locale_facets.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/StlFunctors.h:
+
+/usr/include/eigen3/Eigen/src/Householder/BlockHouseholder.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h:
+
+/usr/include/c++/15.1.1/bits/nested_exception.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Rotation2D.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/BlasUtil.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Constants.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Translation.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/os_defines.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/IntegralConstant.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/MKL_support.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Macros.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/sys/single_threaded.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/Memory.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/ComplexSchur.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h:
+
+/usr/include/c++/15.1.1/x86_64-pc-linux-gnu/bits/gthr.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h:
+
+/usr/include/c++/15.1.1/bits/std_thread.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h:
+
+/usr/include/eigen3/Eigen/src/Core/util/XprHelper.h:
+
+/usr/include/c++/15.1.1/bits/shared_ptr_base.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/c++/15.1.1/typeinfo:
+
+/usr/include/eigen3/Eigen/src/Geometry/AlignedBox.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/EulerAngles.h:
+
+/usr/include/features.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Hyperplane.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/ParametrizedLine.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Quaternion.h:
+
+/usr/include/spdlog/spdlog.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/Umeyama.h:
+
+/usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h:
+
+/usr/include/c++/15.1.1/bits/uniform_int_dist.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mm_malloc.h:
+
+/usr/include/eigen3/Eigen/src/Householder/Householder.h:
+
+/usr/include/eigen3/Eigen/src/LU/PartialPivLU.h:
+
+/usr/include/eigen3/Eigen/src/Jacobi/Jacobi.h:
+
+/usr/include/eigen3/Eigen/src/LU/Determinant.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h:
+
+/usr/include/eigen3/Eigen/src/LU/FullPivLU.h:
+
+/usr/include/math.h:
+
+/usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h:
+
+/usr/include/eigen3/Eigen/src/LU/InverseImpl.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/Tridiagonalization.h:
+
+/usr/include/eigen3/Eigen/src/LU/arch/InverseSize4.h:
+
+/usr/include/eigen3/Eigen/src/Core/Stride.h:
+
+/usr/include/eigen3/Eigen/src/QR/HouseholderQR.h:
+
+/usr/include/c++/15.1.1/string_view:
+
+/usr/include/eigen3/Eigen/src/misc/Kernel.h:
+
+/usr/include/c++/15.1.1/cstdio:
+
+/usr/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h:
+
+/usr/include/eigen3/Eigen/src/misc/RealSvd2x2.h:
+
+/usr/include/spdlog/logger.h:
+
+/usr/include/eigen3/Eigen/src/Eigenvalues/RealSchur.h:
+
+/usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h:
+
+/usr/include/eigen3/Eigen/src/Core/AssignEvaluator.h:
+
+/usr/include/eigen3/Eigen/src/plugins/BlockMethods.h:
+
+/usr/include/bits/posix1_lim.h:
+
+/usr/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h:
+
+/usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h:
+
+/usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h:
+
+/usr/include/spdlog/details/backtracer.h:
+
+/usr/include/errno.h:
+
+/usr/lib/libmvec.so.1:
+
+/usr/include/bits/fp-logb.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/spdlog/common.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdint.h:
+
+CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o:
+
+/usr/include/spdlog/details/null_mutex.h:
+
+/usr/include/spdlog/details/periodic_worker.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/string.h:
+
+/usr/include/strings.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a:
+
+/usr/include/time.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/emmintrin.h:
+
+/usr/include/bits/time.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stdarg.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/stddef.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xmmintrin.h:
+
+/usr/include/spdlog/details/console_globals.h:
+
+/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdate.cpp:
+
+/home/cianleypoldt/Documents/cpp/emws/src/main.cpp:
+
+/usr/include/spdlog/formatter.h:
+
+/usr/include/spdlog/sinks/rotating_file_sink.h:
+
+/usr/include/spdlog/sinks/sink.h:
+
+/usr/include/c++/15.1.1/iosfwd:
+
+/usr/lib/Scrt1.o:
+
+/usr/lib/crti.o:
+
+/usr/include/eigen3/Eigen/src/Core/MathFunctions.h:
+
+/usr/include/linux/limits.h:
+
+/usr/lib/crtn.o:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h:
+
+/usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:
+
+/usr/lib/libgcc_s.so.1:
+
+/usr/lib/libm.so:

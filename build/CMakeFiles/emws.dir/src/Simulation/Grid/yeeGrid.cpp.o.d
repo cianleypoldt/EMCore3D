@@ -397,4 +397,34 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o: \
  /usr/include/eigen3/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/RealQZ.h \
  /usr/include/eigen3/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
- /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/../../IO/logger.h
+ /usr/include/spdlog/spdlog.h /usr/include/spdlog/common.h \
+ /usr/include/spdlog/details/null_mutex.h /usr/include/c++/15.1.1/utility \
+ /usr/include/c++/15.1.1/bits/stl_relops.h /usr/include/spdlog/tweakme.h \
+ /usr/include/c++/15.1.1/chrono /usr/include/c++/15.1.1/bits/chrono.h \
+ /usr/include/c++/15.1.1/ratio /usr/include/c++/15.1.1/ctime \
+ /usr/include/c++/15.1.1/bits/parse_numbers.h \
+ /usr/include/c++/15.1.1/memory \
+ /usr/include/c++/15.1.1/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/15.1.1/bits/align.h \
+ /usr/include/c++/15.1.1/bits/unique_ptr.h \
+ /usr/include/c++/15.1.1/bits/shared_ptr.h \
+ /usr/include/c++/15.1.1/bits/shared_ptr_base.h \
+ /usr/include/c++/15.1.1/bits/allocated_ptr.h \
+ /usr/include/c++/15.1.1/ext/concurrence.h \
+ /usr/include/c++/15.1.1/bits/shared_ptr_atomic.h \
+ /usr/include/c++/15.1.1/backward/auto_ptr.h \
+ /usr/include/c++/15.1.1/pstl/glue_memory_defs.h \
+ /usr/include/spdlog/fmt/fmt.h /usr/include/fmt/base.h \
+ /usr/include/fmt/format.h /usr/include/fmt/base.h \
+ /usr/include/spdlog/details/registry.h \
+ /usr/include/spdlog/details/periodic_worker.h \
+ /usr/include/c++/15.1.1/condition_variable \
+ /usr/include/c++/15.1.1/bits/std_mutex.h \
+ /usr/include/c++/15.1.1/bits/unique_lock.h /usr/include/c++/15.1.1/mutex \
+ /usr/include/c++/15.1.1/thread /usr/include/c++/15.1.1/bits/std_thread.h \
+ /usr/include/c++/15.1.1/bits/this_thread_sleep.h \
+ /usr/include/spdlog/details/synchronous_factory.h \
+ /usr/include/spdlog/logger.h /usr/include/spdlog/details/backtracer.h \
+ /usr/include/spdlog/details/circular_q.h \
+ /usr/include/spdlog/details/log_msg_buffer.h \
+ /usr/include/spdlog/details/log_msg.h /usr/include/spdlog/version.h

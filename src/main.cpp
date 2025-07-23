@@ -2,5 +2,7 @@
 
 int main() {
 
-    emftdt sim({30, 30, 10});
+    initSPDlog();
+
+    emfdtd sim({170, 170, 170});
 }

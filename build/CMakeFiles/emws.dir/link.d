@@ -15,8 +15,10 @@ emws: \
   CMakeFiles/emws.dir/src/main.cpp.o \
   /usr/lib/libglm.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libglfw.so \
+  /usr/lib/libspdlog.so.1.15.3 \
   /usr/lib/libGLX.so \
   /usr/lib/libOpenGL.so \
+  /usr/lib/libfmt.so.11.2.0 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
@@ -43,9 +45,9 @@ emws: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/libgcc.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtendS.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o \
+  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib/libGLdispatch.so.0 \
   /usr/lib/libX11.so.6 \
-  /usr/lib/ld-linux-x86-64.so.2 \
   /usr/lib/libxcb.so.1 \
   /usr/lib/libXau.so.6 \
   /usr/lib/libXdmcp.so.6
@@ -82,9 +84,13 @@ CMakeFiles/emws.dir/src/main.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libglfw.so:
 
+/usr/lib/libspdlog.so.1.15.3:
+
 /usr/lib/libGLX.so:
 
 /usr/lib/libOpenGL.so:
+
+/usr/lib/libfmt.so.11.2.0:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so:
 
@@ -138,11 +144,11 @@ CMakeFiles/emws.dir/src/main.cpp.o:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crtn.o:
 
+/usr/lib/ld-linux-x86-64.so.2:
+
 /usr/lib/libGLdispatch.so.0:
 
 /usr/lib/libX11.so.6:
-
-/usr/lib/ld-linux-x86-64.so.2:
 
 /usr/lib/libxcb.so.1:
 
