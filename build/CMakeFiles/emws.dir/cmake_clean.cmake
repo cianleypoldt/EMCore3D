@@ -18,6 +18,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o.d"
   "CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o"
   "CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o.d"
+  "CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o"
+  "CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o.d"
   "CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o"
   "CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o.d"
   "CMakeFiles/emws.dir/src/main.cpp.o"

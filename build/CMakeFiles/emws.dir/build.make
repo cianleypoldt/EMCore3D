@@ -198,10 +198,24 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdate.cpp -o CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.s
 
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o: CMakeFiles/emws.dir/flags.make
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdateSIMD.cpp
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -mavx2 -mfma -MD -MT CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o -MF CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o.d -o CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdateSIMD.cpp
+
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -mavx2 -mfma -E /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdateSIMD.cpp > CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.i
+
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -mavx2 -mfma -S /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdateSIMD.cpp -o CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.s
+
 CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o: CMakeFiles/emws.dir/flags.make
 CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp
 CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o -MF CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o.d -o CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp
 
 CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.i: cmake_force
@@ -215,7 +229,7 @@ CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.s: cmake_force
 CMakeFiles/emws.dir/src/main.cpp.o: CMakeFiles/emws.dir/flags.make
 CMakeFiles/emws.dir/src/main.cpp.o: /home/cianleypoldt/Documents/cpp/emws/src/main.cpp
 CMakeFiles/emws.dir/src/main.cpp.o: CMakeFiles/emws.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/emws.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/emws.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/emws.dir/src/main.cpp.o -MF CMakeFiles/emws.dir/src/main.cpp.o.d -o CMakeFiles/emws.dir/src/main.cpp.o -c /home/cianleypoldt/Documents/cpp/emws/src/main.cpp
 
 CMakeFiles/emws.dir/src/main.cpp.i: cmake_force
@@ -237,6 +251,7 @@ emws_OBJECTS = \
 "CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o" \
 "CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o" \
 "CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o" \
+"CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o" \
 "CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o" \
 "CMakeFiles/emws.dir/src/main.cpp.o"
 
@@ -252,6 +267,7 @@ emws: CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o
 emws: CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o
 emws: CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o
 emws: CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o
+emws: CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o
 emws: CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o
 emws: CMakeFiles/emws.dir/src/main.cpp.o
 emws: CMakeFiles/emws.dir/build.make
@@ -261,8 +277,10 @@ emws: /usr/lib/libspdlog.so.1.15.3
 emws: /usr/lib/libGLX.so
 emws: /usr/lib/libOpenGL.so
 emws: /usr/lib/libfmt.so.11.2.0
+emws: /usr/lib/libgomp.so
+emws: /usr/lib/libpthread.a
 emws: CMakeFiles/emws.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable emws"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable emws"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/emws.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

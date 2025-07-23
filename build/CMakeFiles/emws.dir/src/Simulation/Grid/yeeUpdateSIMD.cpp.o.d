@@ -1,7 +1,8 @@
-CMakeFiles/emws.dir/src/YeeGrid/yee_grid.cpp.o: \
- /home/cianleypoldt/Documents/cpp/emws/src/YeeGrid/yee_grid.cpp \
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o: \
+ /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdateSIMD.cpp \
  /usr/include/stdc-predef.h \
- /home/cianleypoldt/Documents/cpp/emws/src/YeeGrid/yee_grid.h \
+ /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.h \
+ /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/../constants.h \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
@@ -81,6 +82,116 @@ CMakeFiles/emws.dir/src/YeeGrid/yee_grid.cpp.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xmmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mm_malloc.h \
  /usr/include/c++/15.1.1/stdlib.h /usr/include/c++/15.1.1/cstdlib \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/pmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mwaitintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/tmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/smmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/popcntintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/nmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/immintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/x86gprintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/ia32intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/adxintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/bmiintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/bmi2intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/cetintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/cldemoteintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/clflushoptintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/clwbintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/clzerointrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/cmpccxaddintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/enqcmdintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/fxsrintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/lzcntintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/lwpintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/movdirintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/mwaitxintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/pconfigintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/pkuintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/prfchiintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/raointintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/rdseedintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/rtmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/serializeintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/sgxintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/tbmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/tsxldtrkintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/uintrintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/waitpkgintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/wbnoinvdintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xsaveintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xsavecintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xsaveoptintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xsavesintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/xtestintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/hresetintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/usermsrintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/wmmintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avxintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avxvnniintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avxifmaintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avxvnniint8intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avxvnniint16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx2intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512fintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512cdintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512bwintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512dqintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vlbwintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vldqintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512ifmaintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512ifmavlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vbmiintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vbmivlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vpopcntdqintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vbmi2intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vbmi2vlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vnniintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vnnivlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vpopcntdqvlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512bitalgintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512bitalgvlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vp2intersectintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512vp2intersectvlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512fp16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512fp16vlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/shaintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/sm3intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/sha512intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/sm4intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/fmaintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/f16cintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/gfniintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/vaesintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/vpclmulqdqintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512bf16vlintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx512bf16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avxneconvertintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxtileintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxint8intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxbf16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxcomplexintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxavx512intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxtf32intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxtransposeintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxfp8intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/prfchwintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/keylockerintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxfp16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2mediaintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2-512mediaintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2convertintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2-512convertintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2bf16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2-512bf16intrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2satcvtintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2-512satcvtintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2minmaxintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2-512minmaxintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/avx10_2copyintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/movrsintrin.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/amxmovrsintrin.h \
  /usr/include/c++/15.1.1/new /usr/include/c++/15.1.1/bits/exception.h \
  /usr/include/c++/15.1.1/complex /usr/include/c++/15.1.1/sstream \
  /usr/include/c++/15.1.1/istream /usr/include/c++/15.1.1/ios \
@@ -177,6 +288,7 @@ CMakeFiles/emws.dir/src/YeeGrid/yee_grid.cpp.o: \
  /usr/include/c++/15.1.1/bits/istream.tcc \
  /usr/include/c++/15.1.1/bits/sstream.tcc \
  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/include/omp.h \
  /usr/include/c++/15.1.1/cassert /usr/include/assert.h \
  /usr/include/c++/15.1.1/functional \
  /usr/include/c++/15.1.1/bits/std_function.h \
@@ -231,8 +343,12 @@ CMakeFiles/emws.dir/src/YeeGrid/yee_grid.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
- /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
  /usr/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
+ /usr/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h \
  /usr/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
  /usr/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
  /usr/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \

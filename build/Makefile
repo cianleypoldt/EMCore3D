@@ -346,6 +346,30 @@ src/Simulation/Grid/yeeUpdate.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.s
 .PHONY : src/Simulation/Grid/yeeUpdate.cpp.s
 
+src/Simulation/Grid/yeeUpdateSIMD.o: src/Simulation/Grid/yeeUpdateSIMD.cpp.o
+.PHONY : src/Simulation/Grid/yeeUpdateSIMD.o
+
+# target to build an object file
+src/Simulation/Grid/yeeUpdateSIMD.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o
+.PHONY : src/Simulation/Grid/yeeUpdateSIMD.cpp.o
+
+src/Simulation/Grid/yeeUpdateSIMD.i: src/Simulation/Grid/yeeUpdateSIMD.cpp.i
+.PHONY : src/Simulation/Grid/yeeUpdateSIMD.i
+
+# target to preprocess a source file
+src/Simulation/Grid/yeeUpdateSIMD.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.i
+.PHONY : src/Simulation/Grid/yeeUpdateSIMD.cpp.i
+
+src/Simulation/Grid/yeeUpdateSIMD.s: src/Simulation/Grid/yeeUpdateSIMD.cpp.s
+.PHONY : src/Simulation/Grid/yeeUpdateSIMD.s
+
+# target to generate assembly for a file
+src/Simulation/Grid/yeeUpdateSIMD.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.s
+.PHONY : src/Simulation/Grid/yeeUpdateSIMD.cpp.s
+
 src/Simulation/emftdt.o: src/Simulation/emftdt.cpp.o
 .PHONY : src/Simulation/emftdt.o
 
@@ -430,6 +454,9 @@ help:
 	@echo "... src/Simulation/Grid/yeeUpdate.o"
 	@echo "... src/Simulation/Grid/yeeUpdate.i"
 	@echo "... src/Simulation/Grid/yeeUpdate.s"
+	@echo "... src/Simulation/Grid/yeeUpdateSIMD.o"
+	@echo "... src/Simulation/Grid/yeeUpdateSIMD.i"
+	@echo "... src/Simulation/Grid/yeeUpdateSIMD.s"
 	@echo "... src/Simulation/emftdt.o"
 	@echo "... src/Simulation/emftdt.i"
 	@echo "... src/Simulation/emftdt.s"

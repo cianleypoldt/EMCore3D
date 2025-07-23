@@ -6,5 +6,7 @@ CXX_DEFINES = -DFMT_SHARED -DSPDLOG_COMPILED_LIB -DSPDLOG_FMT_EXTERNAL -DSPDLOG_
 
 CXX_INCLUDES = 
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -std=gnu++17 -fopenmp
+
+# Custom options: CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o_OPTIONS = -mavx2;-mfma
 

@@ -11,6 +11,7 @@ emws: \
   CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o \
   CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o \
   CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o \
+  CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o \
   CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o \
   CMakeFiles/emws.dir/src/main.cpp.o \
   /usr/lib/libglm.a \
@@ -19,6 +20,8 @@ emws: \
   /usr/lib/libGLX.so \
   /usr/lib/libOpenGL.so \
   /usr/lib/libfmt.so.11.2.0 \
+  /usr/lib/libgomp.so \
+  /usr/lib/libpthread.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libm.so \
@@ -76,6 +79,8 @@ CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o:
 
 CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o:
 
+CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o:
+
 CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o:
 
 CMakeFiles/emws.dir/src/main.cpp.o:
@@ -91,6 +96,10 @@ CMakeFiles/emws.dir/src/main.cpp.o:
 /usr/lib/libOpenGL.so:
 
 /usr/lib/libfmt.so.11.2.0:
+
+/usr/lib/libgomp.so:
+
+/usr/lib/libpthread.a:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libstdc++.so:
 

@@ -9,4 +9,5 @@ using R = double;
 namespace em_const {
 constexpr uint MEMORY_CAP = 1000000000;
 constexpr R DEFAULT_CUBE_SIZE = 1;
+constexpr R DEFAULT_TIME_STEP = 0.001;
 } // namespace em_const

@@ -18,7 +18,12 @@ YeeGrid::YeeGrid(vec3 world_size, R cell_size)
                  m_world_size[0], m_world_size[1], m_world_size[2], (int)m_cell_count);
     spdlog::info("Cell dimensions: {}, {}, {}", m_cell_size[0], m_cell_size[1], m_cell_size[2]);
 
-    gridAllocate();
+    assert(gridAllocate());
+
+    for (int i = 0; i < m_cell_count; i++) {
+        m_permeability[i] = 1;
+        m_permittivity[i] = 1;
+    }
 }
 
 YeeGrid::~YeeGrid() {

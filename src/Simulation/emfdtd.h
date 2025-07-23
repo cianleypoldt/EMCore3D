@@ -8,24 +8,18 @@ class emfdtd {
   public:
     emfdtd(vec3 dimensions);
 
+    void update(uint count) { grid.update(count, time_step); }
+
     void addParticle();
     void setMaterial();
     static size_t m_total_heap_allocation;
+
+    R time_step = em_const::DEFAULT_TIME_STEP;
 
   private:
     YeeGrid grid;
 };
 
-void initSPDlog() {
-    auto console = std::make_shared<spdlog::sinks::stdout_color_sink_mt>();
-    auto file = std::make_shared<spdlog::sinks::rotating_file_sink_mt>(
-        "app.log", 20 * 1024 * 1024, 3);
-
-    spdlog::sinks_init_list sinks{console, file};
-    auto logger = std::make_shared<spdlog::logger>("main", sinks);
-    spdlog::set_default_logger(logger);
-
-    spdlog::set_level(spdlog::level::debug);
-    spdlog::set_pattern("[%H:%M:%S.%e] [%^%l%$] %v");
-    spdlog::flush_on(spdlog::level::info);
+namespace ems {
+void initSPDlog(spdlog::level::level_enum level);
 }
