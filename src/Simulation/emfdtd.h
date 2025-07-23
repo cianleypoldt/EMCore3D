@@ -8,7 +8,7 @@ class emfdtd {
   public:
     emfdtd(vec3 dimensions);
 
-    void update(uint count) { grid.update(count, time_step); }
+    void update(uint count) { grid.updateOMP(count, time_step); }
 
     void addParticle();
     void setMaterial();

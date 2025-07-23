@@ -1,4 +1,4 @@
-ssh cian@archserver 'rm -rf ~/Documents/cpp/emws && mkdir -p ~/Documents/cpp/emws'
+ssh cian@archserver 'echo "1930" | sudo -S rm -rf ~/Documents/cpp/emws && mkdir -p ~/Documents/cpp/emws'
 
 scp \
   ~/Documents/cpp/emws/CMakeLists.txt \
