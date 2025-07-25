@@ -8,5 +8,3 @@ CXX_INCLUDES =
 
 CXX_FLAGS = -std=gnu++17 -fopenmp
 
-# Custom options: CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o_OPTIONS = -mavx2;-mfma
-

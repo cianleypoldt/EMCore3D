@@ -2,8 +2,8 @@ CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o: \
  /home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp \
  /usr/include/stdc-predef.h \
  /home/cianleypoldt/Documents/cpp/emws/src/Simulation/emfdtd.h \
- /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.h \
- /home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/../constants.h \
+ /home/cianleypoldt/Documents/cpp/emws/src/Simulation/grid/yee_grid.h \
+ /home/cianleypoldt/Documents/cpp/emws/src/Simulation/grid/../constants.h \
  /usr/include/eigen3/Eigen/Dense /usr/include/eigen3/Eigen/Core \
  /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
  /usr/include/eigen3/Eigen/src/Core/util/Macros.h \

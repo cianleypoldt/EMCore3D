@@ -10,11 +10,10 @@ set(OLD_GLOB
   "/home/cianleypoldt/Documents/cpp/emws/src/Render/scalarRenderer.cpp"
   "/home/cianleypoldt/Documents/cpp/emws/src/Render/splineExtractor.cpp"
   "/home/cianleypoldt/Documents/cpp/emws/src/Render/splineRenderer.cpp"
-  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/gridAllocator.cpp"
-  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeGrid.cpp"
-  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdate.cpp"
-  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/Grid/yeeUpdateSIMD.cpp"
   "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/emftdt.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/grid/grid_allocator.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/grid/grid_update_naive.cpp"
+  "/home/cianleypoldt/Documents/cpp/emws/src/Simulation/grid/yee_grid.cpp"
   "/home/cianleypoldt/Documents/cpp/emws/src/main.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

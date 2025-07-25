@@ -1,21 +1,21 @@
 #include "emfdtd.h"
 
-size_t emfdtd::m_total_heap_allocation = 0;
+size_t emfdtd::TotalHeapAllocation = 0;
 
 emfdtd::emfdtd(vec3 dimensions)
     : grid(dimensions, em_const::DEFAULT_CUBE_SIZE) {
 
     R min_c = std::numeric_limits<R>::max();
 
-    for (int i = 0; i < grid.m_cell_count; ++i) {
-        const R eps = grid.m_permittivity[i];
-        const R mu = grid.m_permeability[i];
+    for (int i = 0; i < grid.CellCount; ++i) {
+        const R eps = grid.m_InvPermittivity[i];
+        const R mu = grid.m_InvPermeability[i];
         const R local_c = 1.0 / std::sqrt(eps * mu);
         if (local_c < min_c) {
             min_c = local_c;
         }
     }
-    const R dx = grid.m_cell_size.maxCoeff();
+    const R dx = grid.CellSize.maxCoeff();
     time_step = dx / (min_c * std::sqrt(3.0));
 
     spdlog::info("Maximum stable time step is {}s in the current grid", time_step);

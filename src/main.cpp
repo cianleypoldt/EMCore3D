@@ -4,6 +4,6 @@ int main() {
 
     ems::initSPDlog(spdlog::level::debug);
 
-    emfdtd sim({170, 170, 170});
-    sim.update(500);
+    emfdtd sim({100, 100, 100});
+    sim.update(10);
 }

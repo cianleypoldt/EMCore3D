@@ -85,12 +85,12 @@ clean: CMakeFiles/emws.dir/clean
 CMakeFiles/emws.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target emws"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target emws"
 .PHONY : CMakeFiles/emws.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/emws.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/emws.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles 0
 .PHONY : CMakeFiles/emws.dir/rule
@@ -102,7 +102,7 @@ emws: CMakeFiles/emws.dir/rule
 # codegen rule for target.
 CMakeFiles/emws.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Finished codegen for target emws"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/cianleypoldt/Documents/cpp/emws/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Finished codegen for target emws"
 .PHONY : CMakeFiles/emws.dir/codegen
 
 # clean rule for target.

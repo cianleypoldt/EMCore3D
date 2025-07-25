@@ -274,102 +274,6 @@ src/Render/splineRenderer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.s
 .PHONY : src/Render/splineRenderer.cpp.s
 
-src/Simulation/Grid/gridAllocator.o: src/Simulation/Grid/gridAllocator.cpp.o
-.PHONY : src/Simulation/Grid/gridAllocator.o
-
-# target to build an object file
-src/Simulation/Grid/gridAllocator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o
-.PHONY : src/Simulation/Grid/gridAllocator.cpp.o
-
-src/Simulation/Grid/gridAllocator.i: src/Simulation/Grid/gridAllocator.cpp.i
-.PHONY : src/Simulation/Grid/gridAllocator.i
-
-# target to preprocess a source file
-src/Simulation/Grid/gridAllocator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.i
-.PHONY : src/Simulation/Grid/gridAllocator.cpp.i
-
-src/Simulation/Grid/gridAllocator.s: src/Simulation/Grid/gridAllocator.cpp.s
-.PHONY : src/Simulation/Grid/gridAllocator.s
-
-# target to generate assembly for a file
-src/Simulation/Grid/gridAllocator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.s
-.PHONY : src/Simulation/Grid/gridAllocator.cpp.s
-
-src/Simulation/Grid/yeeGrid.o: src/Simulation/Grid/yeeGrid.cpp.o
-.PHONY : src/Simulation/Grid/yeeGrid.o
-
-# target to build an object file
-src/Simulation/Grid/yeeGrid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o
-.PHONY : src/Simulation/Grid/yeeGrid.cpp.o
-
-src/Simulation/Grid/yeeGrid.i: src/Simulation/Grid/yeeGrid.cpp.i
-.PHONY : src/Simulation/Grid/yeeGrid.i
-
-# target to preprocess a source file
-src/Simulation/Grid/yeeGrid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.i
-.PHONY : src/Simulation/Grid/yeeGrid.cpp.i
-
-src/Simulation/Grid/yeeGrid.s: src/Simulation/Grid/yeeGrid.cpp.s
-.PHONY : src/Simulation/Grid/yeeGrid.s
-
-# target to generate assembly for a file
-src/Simulation/Grid/yeeGrid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.s
-.PHONY : src/Simulation/Grid/yeeGrid.cpp.s
-
-src/Simulation/Grid/yeeUpdate.o: src/Simulation/Grid/yeeUpdate.cpp.o
-.PHONY : src/Simulation/Grid/yeeUpdate.o
-
-# target to build an object file
-src/Simulation/Grid/yeeUpdate.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o
-.PHONY : src/Simulation/Grid/yeeUpdate.cpp.o
-
-src/Simulation/Grid/yeeUpdate.i: src/Simulation/Grid/yeeUpdate.cpp.i
-.PHONY : src/Simulation/Grid/yeeUpdate.i
-
-# target to preprocess a source file
-src/Simulation/Grid/yeeUpdate.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.i
-.PHONY : src/Simulation/Grid/yeeUpdate.cpp.i
-
-src/Simulation/Grid/yeeUpdate.s: src/Simulation/Grid/yeeUpdate.cpp.s
-.PHONY : src/Simulation/Grid/yeeUpdate.s
-
-# target to generate assembly for a file
-src/Simulation/Grid/yeeUpdate.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.s
-.PHONY : src/Simulation/Grid/yeeUpdate.cpp.s
-
-src/Simulation/Grid/yeeUpdateSIMD.o: src/Simulation/Grid/yeeUpdateSIMD.cpp.o
-.PHONY : src/Simulation/Grid/yeeUpdateSIMD.o
-
-# target to build an object file
-src/Simulation/Grid/yeeUpdateSIMD.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o
-.PHONY : src/Simulation/Grid/yeeUpdateSIMD.cpp.o
-
-src/Simulation/Grid/yeeUpdateSIMD.i: src/Simulation/Grid/yeeUpdateSIMD.cpp.i
-.PHONY : src/Simulation/Grid/yeeUpdateSIMD.i
-
-# target to preprocess a source file
-src/Simulation/Grid/yeeUpdateSIMD.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.i
-.PHONY : src/Simulation/Grid/yeeUpdateSIMD.cpp.i
-
-src/Simulation/Grid/yeeUpdateSIMD.s: src/Simulation/Grid/yeeUpdateSIMD.cpp.s
-.PHONY : src/Simulation/Grid/yeeUpdateSIMD.s
-
-# target to generate assembly for a file
-src/Simulation/Grid/yeeUpdateSIMD.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.s
-.PHONY : src/Simulation/Grid/yeeUpdateSIMD.cpp.s
-
 src/Simulation/emftdt.o: src/Simulation/emftdt.cpp.o
 .PHONY : src/Simulation/emftdt.o
 
@@ -393,6 +297,78 @@ src/Simulation/emftdt.s: src/Simulation/emftdt.cpp.s
 src/Simulation/emftdt.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.s
 .PHONY : src/Simulation/emftdt.cpp.s
+
+src/Simulation/grid/grid_allocator.o: src/Simulation/grid/grid_allocator.cpp.o
+.PHONY : src/Simulation/grid/grid_allocator.o
+
+# target to build an object file
+src/Simulation/grid/grid_allocator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/grid/grid_allocator.cpp.o
+.PHONY : src/Simulation/grid/grid_allocator.cpp.o
+
+src/Simulation/grid/grid_allocator.i: src/Simulation/grid/grid_allocator.cpp.i
+.PHONY : src/Simulation/grid/grid_allocator.i
+
+# target to preprocess a source file
+src/Simulation/grid/grid_allocator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/grid/grid_allocator.cpp.i
+.PHONY : src/Simulation/grid/grid_allocator.cpp.i
+
+src/Simulation/grid/grid_allocator.s: src/Simulation/grid/grid_allocator.cpp.s
+.PHONY : src/Simulation/grid/grid_allocator.s
+
+# target to generate assembly for a file
+src/Simulation/grid/grid_allocator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/grid/grid_allocator.cpp.s
+.PHONY : src/Simulation/grid/grid_allocator.cpp.s
+
+src/Simulation/grid/grid_update_naive.o: src/Simulation/grid/grid_update_naive.cpp.o
+.PHONY : src/Simulation/grid/grid_update_naive.o
+
+# target to build an object file
+src/Simulation/grid/grid_update_naive.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/grid/grid_update_naive.cpp.o
+.PHONY : src/Simulation/grid/grid_update_naive.cpp.o
+
+src/Simulation/grid/grid_update_naive.i: src/Simulation/grid/grid_update_naive.cpp.i
+.PHONY : src/Simulation/grid/grid_update_naive.i
+
+# target to preprocess a source file
+src/Simulation/grid/grid_update_naive.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/grid/grid_update_naive.cpp.i
+.PHONY : src/Simulation/grid/grid_update_naive.cpp.i
+
+src/Simulation/grid/grid_update_naive.s: src/Simulation/grid/grid_update_naive.cpp.s
+.PHONY : src/Simulation/grid/grid_update_naive.s
+
+# target to generate assembly for a file
+src/Simulation/grid/grid_update_naive.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/grid/grid_update_naive.cpp.s
+.PHONY : src/Simulation/grid/grid_update_naive.cpp.s
+
+src/Simulation/grid/yee_grid.o: src/Simulation/grid/yee_grid.cpp.o
+.PHONY : src/Simulation/grid/yee_grid.o
+
+# target to build an object file
+src/Simulation/grid/yee_grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/grid/yee_grid.cpp.o
+.PHONY : src/Simulation/grid/yee_grid.cpp.o
+
+src/Simulation/grid/yee_grid.i: src/Simulation/grid/yee_grid.cpp.i
+.PHONY : src/Simulation/grid/yee_grid.i
+
+# target to preprocess a source file
+src/Simulation/grid/yee_grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/grid/yee_grid.cpp.i
+.PHONY : src/Simulation/grid/yee_grid.cpp.i
+
+src/Simulation/grid/yee_grid.s: src/Simulation/grid/yee_grid.cpp.s
+.PHONY : src/Simulation/grid/yee_grid.s
+
+# target to generate assembly for a file
+src/Simulation/grid/yee_grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/emws.dir/build.make CMakeFiles/emws.dir/src/Simulation/grid/yee_grid.cpp.s
+.PHONY : src/Simulation/grid/yee_grid.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -445,21 +421,18 @@ help:
 	@echo "... src/Render/splineRenderer.o"
 	@echo "... src/Render/splineRenderer.i"
 	@echo "... src/Render/splineRenderer.s"
-	@echo "... src/Simulation/Grid/gridAllocator.o"
-	@echo "... src/Simulation/Grid/gridAllocator.i"
-	@echo "... src/Simulation/Grid/gridAllocator.s"
-	@echo "... src/Simulation/Grid/yeeGrid.o"
-	@echo "... src/Simulation/Grid/yeeGrid.i"
-	@echo "... src/Simulation/Grid/yeeGrid.s"
-	@echo "... src/Simulation/Grid/yeeUpdate.o"
-	@echo "... src/Simulation/Grid/yeeUpdate.i"
-	@echo "... src/Simulation/Grid/yeeUpdate.s"
-	@echo "... src/Simulation/Grid/yeeUpdateSIMD.o"
-	@echo "... src/Simulation/Grid/yeeUpdateSIMD.i"
-	@echo "... src/Simulation/Grid/yeeUpdateSIMD.s"
 	@echo "... src/Simulation/emftdt.o"
 	@echo "... src/Simulation/emftdt.i"
 	@echo "... src/Simulation/emftdt.s"
+	@echo "... src/Simulation/grid/grid_allocator.o"
+	@echo "... src/Simulation/grid/grid_allocator.i"
+	@echo "... src/Simulation/grid/grid_allocator.s"
+	@echo "... src/Simulation/grid/grid_update_naive.o"
+	@echo "... src/Simulation/grid/grid_update_naive.i"
+	@echo "... src/Simulation/grid/grid_update_naive.s"
+	@echo "... src/Simulation/grid/yee_grid.o"
+	@echo "... src/Simulation/grid/yee_grid.i"
+	@echo "... src/Simulation/grid/yee_grid.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

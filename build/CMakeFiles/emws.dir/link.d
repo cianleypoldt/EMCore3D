@@ -8,11 +8,10 @@ emws: \
   CMakeFiles/emws.dir/src/Render/scalarRenderer.cpp.o \
   CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o \
   CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o \
-  CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o \
-  CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o \
-  CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o \
-  CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o \
   CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o \
+  CMakeFiles/emws.dir/src/Simulation/grid/grid_allocator.cpp.o \
+  CMakeFiles/emws.dir/src/Simulation/grid/grid_update_naive.cpp.o \
+  CMakeFiles/emws.dir/src/Simulation/grid/yee_grid.cpp.o \
   CMakeFiles/emws.dir/src/main.cpp.o \
   /usr/lib/libglm.a \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libglfw.so \
@@ -73,15 +72,13 @@ CMakeFiles/emws.dir/src/Render/splineExtractor.cpp.o:
 
 CMakeFiles/emws.dir/src/Render/splineRenderer.cpp.o:
 
-CMakeFiles/emws.dir/src/Simulation/Grid/gridAllocator.cpp.o:
-
-CMakeFiles/emws.dir/src/Simulation/Grid/yeeGrid.cpp.o:
-
-CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdate.cpp.o:
-
-CMakeFiles/emws.dir/src/Simulation/Grid/yeeUpdateSIMD.cpp.o:
-
 CMakeFiles/emws.dir/src/Simulation/emftdt.cpp.o:
+
+CMakeFiles/emws.dir/src/Simulation/grid/grid_allocator.cpp.o:
+
+CMakeFiles/emws.dir/src/Simulation/grid/grid_update_naive.cpp.o:
+
+CMakeFiles/emws.dir/src/Simulation/grid/yee_grid.cpp.o:
 
 CMakeFiles/emws.dir/src/main.cpp.o:
 
