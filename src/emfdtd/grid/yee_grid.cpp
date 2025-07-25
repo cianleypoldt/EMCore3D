@@ -2,30 +2,30 @@
 #include <spdlog/spdlog.h>
 
 yee_grid::yee_grid(vec3 world_size, R cell_size)
-    : WorldSize(world_size) {
+    : world_size(world_size) {
 
-    GridDimensions[0] = std::round(world_size[0] / cell_size);
-    GridDimensions[1] = std::round(world_size[1] / cell_size);
-    GridDimensions[2] = std::round(world_size[2] / cell_size);
+    grid_dimensions[0] = std::round(world_size[0] / cell_size);
+    grid_dimensions[1] = std::round(world_size[1] / cell_size);
+    grid_dimensions[2] = std::round(world_size[2] / cell_size);
 
-    CellSize[0] = WorldSize[0] / GridDimensions[0];
-    CellSize[1] = WorldSize[1] / GridDimensions[1];
-    CellSize[2] = WorldSize[2] / GridDimensions[2];
+    cell_dimensions[0] = world_size[0] / grid_dimensions[0];
+    cell_dimensions[1] = world_size[1] / grid_dimensions[1];
+    cell_dimensions[2] = world_size[2] / grid_dimensions[2];
 
-    CellCount = GridDimensions[0] * GridDimensions[1] * GridDimensions[2];
+    cell_count = grid_dimensions[0] * grid_dimensions[1] * grid_dimensions[2];
 
     spdlog::info("Constructing a grid over {}x{}x{} meters using {} cubes",
-                 WorldSize[0], WorldSize[1], WorldSize[2], (int)CellCount);
-    spdlog::info("Cell dimensions: {}, {}, {}", CellSize[0], CellSize[1], CellSize[2]);
+                 world_size[0], world_size[1], world_size[2], (int)cell_count);
+    spdlog::info("Cell dimensions: {}, {}, {}", cell_dimensions[0], cell_dimensions[1], cell_dimensions[2]);
 
-    assert(GridAllocate());
+    assert(grid_allocate());
 
-    for (int i = 0; i < CellCount; i++) {
-        m_InvPermeability[i] = 0.5;
-        m_InvPermittivity[i] = 0.5;
+    for (int i = 0; i < cell_count; i++) {
+        inv_permeability[i] = 0.5;
+        inv_permittivity[i] = 0.5;
     }
 }
 
 yee_grid::~yee_grid() {
-    GridDeallocate();
+    grid_deallocate();
 }

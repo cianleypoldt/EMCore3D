@@ -7,66 +7,48 @@
 #include <malloc.h>
 #endif
 
-void* AlignedMalloc(std::size_t size, std::size_t align) {
-#ifdef _WIN32
-    return _aligned_malloc(size, align);
-#else
-    void* p = nullptr;
-    if (posix_memalign(&p, align, size) != 0) p = nullptr;
-    return p;
-#endif
-}
+bool yee_grid::grid_allocate() {
 
-void AlignedFree(void* p) {
-#ifdef _WIN32
-    _aligned_free(p);
-#else
-    free(p);
-#endif
-}
-
-bool yee_grid::GridAllocate() {
-
-    if (emfdtd::TotalHeapAllocation + CellCount * MemoryPerCell > em_const::memory_cap) {
-        spdlog::error("Grid allocation ({} bytes) exceeds memory cap of {}", (int)(CellCount * MemoryPerCell), em_const::memory_cap);
+    if (emfdtd::TotalHeapAllocation + cell_count * memory_per_cell > em_const::memory_cap) {
+        spdlog::error("Grid allocation ({} bytes) exceeds memory cap of {}", (int)(cell_count * memory_per_cell), em_const::memory_cap);
         return false;
     }
 
-    GridAllocation = AlignedMalloc(CellCount * MemoryPerCell, 64);
+    grid_allocation = io::aligned_malloc(cell_count * memory_per_cell, 64);
 
-    if (!GridAllocation) {
-        spdlog::error("Grid memory allocation of {} bytes failed", (int)(CellCount * MemoryPerCell));
+    if (!grid_allocation) {
+        spdlog::error("Grid memory allocation of {} bytes failed", (int)(cell_count * memory_per_cell));
         return false;
     }
 
-    std::memset(GridAllocation, 0, CellCount * MemoryPerCell);
+    std::memset(grid_allocation, 0, cell_count * memory_per_cell);
 
-    m_Ex = reinterpret_cast<R*>(GridAllocation);
-    m_Ey = m_Ex + 1 * CellCount;
-    m_Ez = m_Ex + 2 * CellCount;
+    m_Ex = reinterpret_cast<R*>(grid_allocation);
+    m_Ey = m_Ex + 1 * cell_count;
+    m_Ez = m_Ex + 2 * cell_count;
 
-    m_Hx = m_Ex + 3 * CellCount;
-    m_Hy = m_Ex + 4 * CellCount;
-    m_Hz = m_Ex + 5 * CellCount;
+    m_Hx = m_Ex + 3 * cell_count;
+    m_Hy = m_Ex + 4 * cell_count;
+    m_Hz = m_Ex + 5 * cell_count;
 
-    m_InvPermeability = m_Ex + 6 * CellCount;
-    m_InvPermittivity = m_Ex + 7 * CellCount;
+    inv_permeability = m_Ex + 6 * cell_count;
+    inv_permittivity = m_Ex + 7 * cell_count;
 
-    emfdtd::TotalHeapAllocation += CellCount * MemoryPerCell;
+    emfdtd::TotalHeapAllocation += cell_count * memory_per_cell;
 
     spdlog::debug("Grid allocated {} bytes ({:.2f} MB). Total memory in use is {} bytes ({:.2f} MB)",
-                  (CellCount * MemoryPerCell),
-                  (CellCount * MemoryPerCell) / (1024.0 * 1024.0),
+                  (cell_count * memory_per_cell),
+                  (cell_count * memory_per_cell) / (1024.0 * 1024.0),
                   emfdtd::TotalHeapAllocation,
                   emfdtd::TotalHeapAllocation / (1024.0 * 1024.0));
 
     return true;
 }
 
-void yee_grid::GridDeallocate() {
-    if (!GridAllocation) return;
-    AlignedFree(GridAllocation);
-    GridAllocation = nullptr;
-    emfdtd::TotalHeapAllocation -= CellCount * MemoryPerCell;
+void yee_grid::grid_deallocate() {
+    if (!grid_allocation) return;
+    io::aligned_free(grid_allocation);
+    grid_allocation = nullptr;
+    emfdtd::TotalHeapAllocation -= cell_count * memory_per_cell;
     spdlog::debug("Grid deallocated");
 }

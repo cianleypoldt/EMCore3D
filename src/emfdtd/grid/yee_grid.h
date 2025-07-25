@@ -20,41 +20,41 @@ class yee_grid {
     inline R& Hy(const index3&) const;
     inline R& Hz(const index3&) const;
 
-    inline R& InvPermeability(const index3&) const;
-    inline R& InvPermittivity(const index3&) const;
+    inline R& get_inv_permeability(const index3&) const;
+    inline R& get_inv_permittivity(const index3&) const;
 
-    static constexpr uint MemoryPerCell = 8 * sizeof(R);
+    static constexpr int memory_per_cell = 8 * sizeof(R);
 
-    index3 GridDimensions;
+    index3 grid_dimensions;
 
-    vec3 WorldSize;
-    vec3 CellSize = vec3(1, 1, 1) * em_const::default_cube_size;
+    vec3 world_size;
+    vec3 cell_dimensions = vec3(1, 1, 1) * em_const::default_cube_size;
 
-    uint64_t CellCount = 0;
+    uint64_t cell_count = 0;
 
-    void* GridAllocation = nullptr;
+    void* grid_allocation = nullptr;
 
     R *m_Ex, *m_Ey, *m_Ez;
     R *m_Hx, *m_Hy, *m_Hz;
 
-    R* m_InvPermittivity = nullptr;
-    R* m_InvPermeability = nullptr;
+    R* inv_permittivity = nullptr;
+    R* inv_permeability = nullptr;
 
-    bool GridAllocate();
-    void GridDeallocate();
+    bool grid_allocate();
+    void grid_deallocate();
 };
 
-R& yee_grid::Ex(const index3& index) const { return m_Ex[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
-R& yee_grid::Ey(const index3& index) const { return m_Ey[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
-R& yee_grid::Ez(const index3& index) const { return m_Ez[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
+R& yee_grid::Ex(const index3& index) const { return m_Ex[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
+R& yee_grid::Ey(const index3& index) const { return m_Ey[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
+R& yee_grid::Ez(const index3& index) const { return m_Ez[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
 
-R& yee_grid::Hx(const index3& index) const { return m_Hx[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
-R& yee_grid::Hy(const index3& index) const { return m_Hy[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
-R& yee_grid::Hz(const index3& index) const { return m_Hz[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
+R& yee_grid::Hx(const index3& index) const { return m_Hx[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
+R& yee_grid::Hy(const index3& index) const { return m_Hy[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
+R& yee_grid::Hz(const index3& index) const { return m_Hz[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
 
-R& yee_grid::InvPermeability(const index3& index) const {
-    return m_InvPermeability[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]];
+R& yee_grid::get_inv_permeability(const index3& index) const {
+    return inv_permeability[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]];
 }
-R& yee_grid::InvPermittivity(const index3& index) const {
-    return m_InvPermittivity[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]];
+R& yee_grid::get_inv_permittivity(const index3& index) const {
+    return inv_permittivity[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]];
 }
