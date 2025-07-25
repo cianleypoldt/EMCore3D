@@ -1,5 +1,5 @@
 #pragma once
-#include "../../common/constants.h"
+#include "../../IO/io.h"
 #include <eigen3/Eigen/Dense>
 
 class yee_grid {
@@ -28,7 +28,7 @@ class yee_grid {
     index3 GridDimensions;
 
     vec3 WorldSize;
-    vec3 CellSize = vec3(1, 1, 1) * em_const::DEFAULT_CUBE_SIZE;
+    vec3 CellSize = vec3(1, 1, 1) * em_const::default_cube_size;
 
     uint64_t CellCount = 0;
 

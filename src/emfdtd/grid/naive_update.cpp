@@ -3,9 +3,9 @@
 void yee_grid::updateGridNaive(R TimeStep) {
 
     // Amperes law
-    for (uint k = 0; k < GridDimensions[2]; k++) {
-        for (uint j = 0; j < GridDimensions[1]; j++) {
-            for (uint i = 0; i < GridDimensions[0]; i++) {
+    for (int k = 0; k < GridDimensions[2]; k++) {
+        for (int j = 0; j < GridDimensions[1]; j++) {
+            for (int i = 0; i < GridDimensions[0]; i++) {
 
                 if (j != 0 && k != 0)
                     Ex({i, j, k}) += TimeStep * InvPermittivity({i, j, k}) *
@@ -20,9 +20,9 @@ void yee_grid::updateGridNaive(R TimeStep) {
         }
     }
     // Faraday's law
-    for (uint k = 0; k < GridDimensions[2]; k++) {
-        for (uint j = 0; j < GridDimensions[1]; j++) {
-            for (uint i = 0; i < GridDimensions[0]; i++) {
+    for (int k = 0; k < GridDimensions[2]; k++) {
+        for (int j = 0; j < GridDimensions[1]; j++) {
+            for (int i = 0; i < GridDimensions[0]; i++) {
 
                 if (j != GridDimensions[1] - 1 && k != GridDimensions[2] - 1)
                     Hx({i, j, k}) -= TimeStep * InvPermeability({i, j, k}) *

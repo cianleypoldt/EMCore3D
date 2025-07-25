@@ -27,8 +27,8 @@ void AlignedFree(void* p) {
 
 bool yee_grid::GridAllocate() {
 
-    if (emfdtd::TotalHeapAllocation + CellCount * MemoryPerCell > em_const::MEMORY_CAP) {
-        spdlog::error("Grid allocation ({} bytes) exceeds memory cap of {}", (int)(CellCount * MemoryPerCell), em_const::MEMORY_CAP);
+    if (emfdtd::TotalHeapAllocation + CellCount * MemoryPerCell > em_const::memory_cap) {
+        spdlog::error("Grid allocation ({} bytes) exceeds memory cap of {}", (int)(CellCount * MemoryPerCell), em_const::memory_cap);
         return false;
     }
 

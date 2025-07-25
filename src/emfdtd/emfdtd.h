@@ -14,7 +14,7 @@ class emfdtd {
     void setMaterial();
     static size_t TotalHeapAllocation;
 
-    R time_step = em_const::DEFAULT_TIME_STEP;
+    R time_step = em_const::default_time_step;
 
   private:
     yee_grid grid;

@@ -3,7 +3,7 @@
 size_t emfdtd::TotalHeapAllocation = 0;
 
 emfdtd::emfdtd(vec3 dimensions)
-    : grid(dimensions, em_const::DEFAULT_CUBE_SIZE) {
+    : grid(dimensions, em_const::default_cube_size) {
 
     R min_c = std::numeric_limits<R>::max();
 
