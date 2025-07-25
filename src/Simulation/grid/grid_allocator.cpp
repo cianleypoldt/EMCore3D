@@ -25,7 +25,7 @@ void AlignedFree(void* p) {
 #endif
 }
 
-bool YeeGrid::GridAllocate() {
+bool yee_grid::GridAllocate() {
 
     if (emfdtd::TotalHeapAllocation + CellCount * MemoryPerCell > em_const::MEMORY_CAP) {
         spdlog::error("Grid allocation ({} bytes) exceeds memory cap of {}", (int)(CellCount * MemoryPerCell), em_const::MEMORY_CAP);
@@ -63,7 +63,7 @@ bool YeeGrid::GridAllocate() {
     return true;
 }
 
-void YeeGrid::GridDeallocate() {
+void yee_grid::GridDeallocate() {
     if (!GridAllocation) return;
     AlignedFree(GridAllocation);
     GridAllocation = nullptr;

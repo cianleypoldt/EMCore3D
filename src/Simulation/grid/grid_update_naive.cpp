@@ -1,6 +1,6 @@
 #include "yee_grid.h"
 
-void YeeGrid::updateGridNaive(R TimeStep) {
+void yee_grid::updateGridNaive(R TimeStep) {
 
     // Amperes law
     for (uint k = 0; k < GridDimensions[2]; k++) {

@@ -1,7 +1,7 @@
 #include "yee_grid.h"
 #include <spdlog/spdlog.h>
 
-YeeGrid::YeeGrid(vec3 world_size, R cell_size)
+yee_grid::yee_grid(vec3 world_size, R cell_size)
     : WorldSize(world_size) {
 
     GridDimensions[0] = std::round(world_size[0] / cell_size);
@@ -26,6 +26,6 @@ YeeGrid::YeeGrid(vec3 world_size, R cell_size)
     }
 }
 
-YeeGrid::~YeeGrid() {
+yee_grid::~yee_grid() {
     GridDeallocate();
 }

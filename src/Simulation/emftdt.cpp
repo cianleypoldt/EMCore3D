@@ -20,17 +20,3 @@ emfdtd::emfdtd(vec3 dimensions)
 
     spdlog::info("Maximum stable time step is {}s in the current grid", time_step);
 }
-
-void ems::initSPDlog(spdlog::level::level_enum level) {
-    auto console = std::make_shared<spdlog::sinks::stdout_color_sink_mt>();
-    auto file = std::make_shared<spdlog::sinks::rotating_file_sink_mt>(
-        "app.log", 20 * 1024 * 1024, 3);
-
-    spdlog::sinks_init_list sinks{console, file};
-    auto logger = std::make_shared<spdlog::logger>("main", sinks);
-    spdlog::set_default_logger(logger);
-
-    spdlog::set_level(level);
-    spdlog::set_pattern("[%H:%M:%S.%e] [%^%l%$] %v");
-    spdlog::flush_on(spdlog::level::info);
-}

@@ -1,8 +1,6 @@
 #pragma once
+#include "../IO/io.h"
 #include "grid/yee_grid.h"
-#include <spdlog/sinks/rotating_file_sink.h>
-#include <spdlog/sinks/stdout_color_sinks.h>
-#include <spdlog/spdlog.h>
 
 class emfdtd {
   public:
@@ -19,9 +17,5 @@ class emfdtd {
     R time_step = em_const::DEFAULT_TIME_STEP;
 
   private:
-    YeeGrid grid;
+    yee_grid grid;
 };
-
-namespace ems {
-void initSPDlog(spdlog::level::level_enum level);
-}

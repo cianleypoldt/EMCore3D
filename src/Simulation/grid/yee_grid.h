@@ -1,15 +1,15 @@
 #pragma once
-#include "../constants.h"
+#include "../../common/constants.h"
 #include <eigen3/Eigen/Dense>
 
-class YeeGrid {
+class yee_grid {
 
   public:
-    YeeGrid(vec3, R CellSize);
-    ~YeeGrid();
+    yee_grid(vec3, R CellSize);
+    ~yee_grid();
 
-    YeeGrid(const YeeGrid&) = delete;
-    YeeGrid& operator=(const YeeGrid&) = delete;
+    yee_grid(const yee_grid&) = delete;
+    yee_grid& operator=(const yee_grid&) = delete;
 
     void updateGridNaive(R TimeStep);
 
@@ -44,17 +44,17 @@ class YeeGrid {
     void GridDeallocate();
 };
 
-R& YeeGrid::Ex(const index3& index) const { return m_Ex[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
-R& YeeGrid::Ey(const index3& index) const { return m_Ey[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
-R& YeeGrid::Ez(const index3& index) const { return m_Ez[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
+R& yee_grid::Ex(const index3& index) const { return m_Ex[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
+R& yee_grid::Ey(const index3& index) const { return m_Ey[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
+R& yee_grid::Ez(const index3& index) const { return m_Ez[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
 
-R& YeeGrid::Hx(const index3& index) const { return m_Hx[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
-R& YeeGrid::Hy(const index3& index) const { return m_Hy[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
-R& YeeGrid::Hz(const index3& index) const { return m_Hz[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
+R& yee_grid::Hx(const index3& index) const { return m_Hx[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
+R& yee_grid::Hy(const index3& index) const { return m_Hy[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
+R& yee_grid::Hz(const index3& index) const { return m_Hz[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]]; }
 
-R& YeeGrid::InvPermeability(const index3& index) const {
+R& yee_grid::InvPermeability(const index3& index) const {
     return m_InvPermeability[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]];
 }
-R& YeeGrid::InvPermittivity(const index3& index) const {
+R& yee_grid::InvPermittivity(const index3& index) const {
     return m_InvPermittivity[index[0] + index[1] * GridDimensions[0] + index[2] * GridDimensions[0] * GridDimensions[1]];
 }
