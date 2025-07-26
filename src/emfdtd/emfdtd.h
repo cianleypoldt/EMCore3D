@@ -1,13 +1,21 @@
 #pragma once
-#include "../IO/io.h"
-#include "grid/yee_grid.h"
+#include "IO/io.h"
+#include "src/emfdtd/grid/yee_grid.h"
 
 class emfdtd {
   public:
     emfdtd(vec3 dimensions);
 
-    void update(uint count) {
-        for (int i = 0; i < count; ++i) grid.updateGridNaive(count);
+    void update(int count, const std::function<void(int)>& callback = nullptr) {
+
+        if (callback) {
+            for (int i = 0; i < count; ++i) {
+                grid.updateGridNaive(time_step);
+                callback(i);
+            }
+            return;
+        }
+        for (int i = 0; i < count; ++i) grid.updateGridNaive(time_step);
     }
 
     void addParticle();
@@ -16,6 +24,5 @@ class emfdtd {
 
     R time_step = em_const::default_time_step;
 
-  private:
     yee_grid grid;
 };

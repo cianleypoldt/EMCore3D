@@ -1,11 +1,27 @@
 cmake_minimum_required(VERSION 3.15)
+
+# ------------------------------------------------------------------
+#  Toolchain: Use Clang/Clang++
+# ------------------------------------------------------------------
+# Set compilers BEFORE project()!
+set(CMAKE_C_COMPILER   "clang")
+set(CMAKE_CXX_COMPILER "clang++")
+
 project(emws LANGUAGES CXX)
 
 # ------------------------------------------------------------------
-#  Toolchain & C++ standard
+#  C++ standard
 # ------------------------------------------------------------------
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
+# ------------------------------------------------------------------
+#  Debug: Print project paths
+# ------------------------------------------------------------------
+message(STATUS "CMAKE_CURRENT_SOURCE_DIR: ${CMAKE_CURRENT_SOURCE_DIR}")
+message(STATUS "Project name: ${PROJECT_NAME}")
 
 # ------------------------------------------------------------------
 #  Packages we need
@@ -23,30 +39,53 @@ pkg_search_module(GLFW REQUIRED glfw3)
 file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS src/*.cpp)
 
 # ------------------------------------------------------------------
+#  Debug: Print sources
+# ------------------------------------------------------------------
+message(STATUS "Sources found:")
+foreach(SRC ${SOURCES})
+    message(STATUS "  ${SRC}")
+endforeach()
+
+# ------------------------------------------------------------------
 #  Main executable
 # ------------------------------------------------------------------
 add_executable(${PROJECT_NAME} ${SOURCES})
 
 # ------------------------------------------------------------------
-#  Compiler flags
+#  Compiler flags (Clang)
 # ------------------------------------------------------------------
-#   Release: AVX2 + FMA + OpenMP + LTO + fast-math
-set(CMAKE_CXX_FLAGS_RELEASE
-    "-O3 -mavx2 -mfma -march=native -flto -ffast-math -DNDEBUG")
+# Use target_compile_options for modern CMake
+target_compile_options(${PROJECT_NAME} PRIVATE
+    $<$<CONFIG:Release>:-O3 -mavx2 -mfma -march=native -flto -ffast-math -DNDEBUG>
+    $<$<CONFIG:Debug>:-g -Wall -Wextra>
+)
 
-#   Debug (optional, but useful)
-set(CMAKE_CXX_FLAGS_DEBUG "-g -Wall -Wextra")
-
-# after add_executable(...)
+# SIMD flags for specific file
 set_source_files_properties(
     src/Simulation/Grid/yeeUpdateSIMD.cpp
     PROPERTIES COMPILE_OPTIONS "-mavx2;-mfma"
 )
 
 # ------------------------------------------------------------------
-#  Include / link
+#  Include directories
 # ------------------------------------------------------------------
-target_include_directories(${PROJECT_NAME} PRIVATE ${GLFW_INCLUDE_DIRS})
+target_include_directories(${PROJECT_NAME}
+    PRIVATE
+        ${CMAKE_CURRENT_SOURCE_DIR}
+        ${CMAKE_CURRENT_SOURCE_DIR}/src
+        ${GLFW_INCLUDE_DIRS}
+)
+
+# ------------------------------------------------------------------
+#  Debug: Print include directories
+# ------------------------------------------------------------------
+message(STATUS "Include directories set to:")
+message(STATUS "  ${CMAKE_CURRENT_SOURCE_DIR}")
+message(STATUS "  ${CMAKE_CURRENT_SOURCE_DIR}/src")
+
+# ------------------------------------------------------------------
+#  Link libraries
+# ------------------------------------------------------------------
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
         glm::glm
@@ -55,3 +94,9 @@ target_link_libraries(${PROJECT_NAME}
         spdlog::spdlog
         OpenMP::OpenMP_CXX
 )
+
+# ------------------------------------------------------------------
+#  Print compiler info
+# ------------------------------------------------------------------
+message(STATUS "CMAKE_C_COMPILER: ${CMAKE_C_COMPILER}")
+message(STATUS "CMAKE_CXX_COMPILER: ${CMAKE_CXX_COMPILER}")

@@ -1,4 +1,4 @@
-#include "yee_grid.h"
+#include "emfdtd/grid/yee_grid.h"
 #include <spdlog/spdlog.h>
 
 yee_grid::yee_grid(vec3 world_size, R cell_size)

@@ -1,6 +1,5 @@
 #pragma once
-#include "../../IO/io.h"
-#include <eigen3/Eigen/Dense>
+#include "IO/io.h"
 
 class yee_grid {
 

@@ -1,4 +1,4 @@
-#include "yee_grid.h"
+#include "emfdtd/grid/yee_grid.h"
 
 void yee_grid::updateGridNaive(R TimeStep) {
 

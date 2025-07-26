@@ -1,4 +1,5 @@
 #pragma once
+
 #include <eigen3/Eigen/Dense>
 
 using vec3 = Eigen::Vector3d;

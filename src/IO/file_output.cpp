@@ -1,86 +1,120 @@
-#include "../emfdtd/grid/yee_grid.h"
-#include "io.h"
+#include "file_output.h"
+#include <filesystem>
+
+namespace fs = std::filesystem;
 
 namespace io {
 
-void file_output::open(const yee_grid& grid, std::string file_name) {
-    if (file_name == file_name_) return;
+void file_output::open(yee_grid* grid_ptr,
+                       const std::string& file_name,
+                       entry_type type,
+                       R compression_factor) {
+    if (!grid_ptr) {
+        spdlog::error("Cannot open file output: grid pointer is null");
+        throw std::invalid_argument("Grid pointer must not be null.");
+    }
 
     close();
 
-    file_name_ = file_name.empty() ? "unnamed_grid_snapshot.bin" : file_name;
-    ofstream_.open(file_name_, std::ios::binary);
+    grid_ = grid_ptr;
+    type_ = type;
+    compression_factor_ = compression_factor;
 
-    if (!ofstream_.is_open()) {
-        throw std::runtime_error("failed to open output file: " + file_name_);
+    fs::path base_path = "../results";
+    fs::create_directories(base_path); // Ensure directory exists
+
+    file_path_ = file_name.empty()
+                     ? base_path / "unnamed_grid_snapshot.bin"
+                     : base_path / file_name;
+
+    // Check if file exists and remove it if it does
+    if (fs::exists(file_path_)) {
+        fs::remove(file_path_);
     }
 
-    file_preface fp;
-    fp.entry_type = file_preface::entry_types::SINGLE_PRECISION;
-    fp.grid_dimensions = grid.grid_dimensions;
-    fp.world_size = grid.world_size;
+    out_stream_.open(file_path_, std::ios::binary | std::ios::out);
+    if (!out_stream_.is_open()) {
+        spdlog::error("Failed to open output file: {}", file_path_.string());
+        throw std::runtime_error("Could not open output file.");
+    }
 
-    ofstream_.write(reinterpret_cast<const char*>(&fp), sizeof(file_preface));
+    write_header(*grid_);
 }
 
 void file_output::close() {
-    if (ofstream_.is_open()) {
-        ofstream_.flush();
-        ofstream_.close();
+    if (out_stream_.is_open()) {
+        try {
+            out_stream_.write(reinterpret_cast<const char*>(&binary_footer), sizeof(binary_footer));
+            out_stream_.flush();
+        } catch (...) {
+            spdlog::warn("Error occurred while writing footer.");
+        }
+        out_stream_.close();
     }
 }
 
-void file_output::save_raw(const yee_grid& grid, std::string file_name) {
-    if (!ofstream_.is_open() || !file_name.empty()) {
-        open(grid, file_name);
-    }
-
-    // update entry type in header
-    ofstream_.seekp(offsetof(file_preface, entry_type), std::ios::beg);
-    file_preface::entry_types type =
-        std::is_same<R, float>::value ? file_preface::entry_types::SINGLE_PRECISION : file_preface::entry_types::DOUBLE_PRECISION;
-    ofstream_.write(reinterpret_cast<const char*>(&type), sizeof(type));
-
-    // append raw grid data
-    ofstream_.seekp(0, std::ios::end);
-    ofstream_.write(reinterpret_cast<const char*>(grid.grid_allocation), grid.cell_count * yee_grid::memory_per_cell);
-}
-
-void file_output::save_single_precision(const yee_grid& grid, std::string file_name) {
-    if (!ofstream_.is_open() || !file_name.empty()) {
-        open(grid, file_name);
-    }
-
-    // update entry type in header
-    file_preface::entry_types type =
-        std::is_same<R, float>::value ? file_preface::entry_types::SINGLE_PRECISION : file_preface::entry_types::DOUBLE_PRECISION;
-
-    ofstream_.seekp(offsetof(file_preface, entry_type), std::ios::beg);
-    ofstream_.write(reinterpret_cast<const char*>(&type), sizeof(type));
-
-    ofstream_.seekp(0, std::ios::end);
-
-    if constexpr (std::is_same<R, float>::value) {
-        // direct write, already float
-        ofstream_.write(reinterpret_cast<const char*>(grid.grid_allocation),
-                        grid.cell_count * yee_grid::memory_per_cell);
+void file_output::write() {
+    if (!grid_) {
+        spdlog::error("Cannot write file: grid pointer is null");
         return;
     }
+    write_data(*grid_);
+}
 
-    // convert to float per entry
-    const R* data = reinterpret_cast<const R*>(grid.grid_allocation);
-    const std::size_t total_elements = grid.cell_count * yee_grid::memory_per_cell;
+void file_output::write_header(const yee_grid& grid) {
+    file_preface header{};
+    header.type = type_;
+    header.grid_dims = grid.grid_dimensions;
+    header.world_size = grid.world_size;
 
-    for (std::size_t i = 0; i < total_elements; ++i) {
-        float value = static_cast<float>(data[i]);
-        ofstream_.write(reinterpret_cast<const char*>(&value), sizeof(float));
+    out_stream_.write(reinterpret_cast<const char*>(&header), sizeof(header));
+}
+
+void file_output::write_data(const yee_grid& grid) {
+    const size_t count = grid.cell_count;
+
+    auto write_all = [&](auto writer) {
+        writer(grid.m_Ex, count);
+        writer(grid.m_Ey, count);
+        writer(grid.m_Ez, count);
+        writer(grid.m_Hx, count);
+        writer(grid.m_Hy, count);
+        writer(grid.m_Hz, count);
+        writer(grid.inv_permittivity, count);
+        writer(grid.inv_permeability, count);
+    };
+
+    if (compression_factor_ > 1e-6) {
+        write_all([this](const auto* data, size_t n) {
+            write_compressed_field(data, n);
+        });
+    } else if (type_ == entry_type::SINGLE_PRECISION && !std::is_same_v<R, float>) {
+        write_all([this](const auto* data, size_t n) {
+            std::vector<float> tmp(n);
+            for (size_t i = 0; i < n; ++i)
+                tmp[i] = static_cast<float>(data[i]);
+            write_field(tmp.data(), n);
+        });
+    } else {
+        write_all([this](const auto* data, size_t n) {
+            write_field(data, n);
+        });
     }
 }
 
-void file_output::save_compressed(const yee_grid& grid, int target_x_resolution, std::string) {
+template <typename T>
+void file_output::write_field(const T* data, size_t count) {
+    out_stream_.write(reinterpret_cast<const char*>(data), count * sizeof(T));
 }
 
-void file_output::save_compressed_single_precision(const yee_grid& grid, int target_x_resolution, std::string) {
+template <typename T>
+void file_output::write_compressed_field(const T* data, size_t count) {
+    size_t stride = static_cast<size_t>(compression_factor_);
+    if (stride < 1) stride = 1;
+
+    for (size_t i = 0; i < count; i += stride) {
+        out_stream_.write(reinterpret_cast<const char*>(&data[i]), sizeof(T));
+    }
 }
 
 } // namespace io
