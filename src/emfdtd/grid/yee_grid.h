@@ -1,28 +1,30 @@
 #pragma once
-#include "IO/io.h"
+#include "common/constants.h"
+#include <cstdint>
 
-class yee_grid {
+class YeeGrid
+{
 
   public:
-    yee_grid(vec3, R CellSize);
-    ~yee_grid();
+    YeeGrid(vec3 /*world_size*/, real cell_size);
+    ~YeeGrid();
 
-    yee_grid(const yee_grid&) = delete;
-    yee_grid& operator=(const yee_grid&) = delete;
+    YeeGrid(const YeeGrid &)             = delete;
+    YeeGrid & operator=(const YeeGrid &) = delete;
 
-    void updateGridNaive(R TimeStep);
+    void naive_grid_update(real time_step);
 
-    inline R& Ex(const index3&) const;
-    inline R& Ey(const index3&) const;
-    inline R& Ez(const index3&) const;
-    inline R& Hx(const index3&) const;
-    inline R& Hy(const index3&) const;
-    inline R& Hz(const index3&) const;
+    [[nodiscard]] inline real & ex(const index3 & /*index*/) const;
+    [[nodiscard]] inline real & ey(const index3 & /*index*/) const;
+    [[nodiscard]] inline real & ez(const index3 & /*index*/) const;
+    [[nodiscard]] inline real & hx(const index3 & /*index*/) const;
+    [[nodiscard]] inline real & hy(const index3 & /*index*/) const;
+    [[nodiscard]] inline real & hz(const index3 & /*index*/) const;
 
-    inline R& get_inv_permeability(const index3&) const;
-    inline R& get_inv_permittivity(const index3&) const;
+    [[nodiscard]] inline real & get_inv_permeability(const index3 & /*index*/) const;
+    [[nodiscard]] inline real & get_inv_permittivity(const index3 & /*index*/) const;
 
-    static constexpr int memory_per_cell = 8 * sizeof(R);
+    static constexpr int memory_per_cell = 8 * sizeof(real);
 
     index3 grid_dimensions;
 
@@ -31,29 +33,48 @@ class yee_grid {
 
     uint64_t cell_count = 0;
 
-    void* grid_allocation = nullptr;
+    void * grid_allocation = nullptr;
 
-    R *m_Ex, *m_Ey, *m_Ez;
-    R *m_Hx, *m_Hy, *m_Hz;
+    real *m_Ex, *m_Ey, *m_Ez;
+    real *m_Hx, *m_Hy, *m_Hz;
 
-    R* inv_permittivity = nullptr;
-    R* inv_permeability = nullptr;
+    real * inv_permittivity = nullptr;
+    real * inv_permeability = nullptr;
 
     bool grid_allocate();
     void grid_deallocate();
 };
 
-R& yee_grid::Ex(const index3& index) const { return m_Ex[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
-R& yee_grid::Ey(const index3& index) const { return m_Ey[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
-R& yee_grid::Ez(const index3& index) const { return m_Ez[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
-
-R& yee_grid::Hx(const index3& index) const { return m_Hx[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
-R& yee_grid::Hy(const index3& index) const { return m_Hy[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
-R& yee_grid::Hz(const index3& index) const { return m_Hz[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]]; }
-
-R& yee_grid::get_inv_permeability(const index3& index) const {
-    return inv_permeability[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]];
+real & YeeGrid::ex(const index3 & index) const {
+    return m_Ex[index[0] + (index[1] * grid_dimensions[0]) + (index[2] * grid_dimensions[0] * grid_dimensions[1])];
 }
-R& yee_grid::get_inv_permittivity(const index3& index) const {
-    return inv_permittivity[index[0] + index[1] * grid_dimensions[0] + index[2] * grid_dimensions[0] * grid_dimensions[1]];
+
+real & YeeGrid::ey(const index3 & index) const {
+    return m_Ey[index[0] + (index[1] * grid_dimensions[0]) + (index[2] * grid_dimensions[0] * grid_dimensions[1])];
+}
+
+real & YeeGrid::ez(const index3 & index) const {
+    return m_Ez[index[0] + (index[1] * grid_dimensions[0]) + (index[2] * grid_dimensions[0] * grid_dimensions[1])];
+}
+
+real & YeeGrid::hx(const index3 & index) const {
+    return m_Hx[index[0] + (index[1] * grid_dimensions[0]) + (index[2] * grid_dimensions[0] * grid_dimensions[1])];
+}
+
+real & YeeGrid::hy(const index3 & index) const {
+    return m_Hy[index[0] + (index[1] * grid_dimensions[0]) + (index[2] * grid_dimensions[0] * grid_dimensions[1])];
+}
+
+real & YeeGrid::hz(const index3 & index) const {
+    return m_Hz[index[0] + (index[1] * grid_dimensions[0]) + (index[2] * grid_dimensions[0] * grid_dimensions[1])];
+}
+
+real & YeeGrid::get_inv_permeability(const index3 & index) const {
+    return inv_permeability[index[0] + (index[1] * grid_dimensions[0]) +
+                            (index[2] * grid_dimensions[0] * grid_dimensions[1])];
+}
+
+real & YeeGrid::get_inv_permittivity(const index3 & index) const {
+    return inv_permittivity[index[0] + (index[1] * grid_dimensions[0]) +
+                            (index[2] * grid_dimensions[0] * grid_dimensions[1])];
 }

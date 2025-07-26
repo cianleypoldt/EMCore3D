@@ -1,21 +1,26 @@
+#include "common/constants.h"
 #include "emfdtd/grid/yee_grid.h"
 
-void yee_grid::updateGridNaive(R TimeStep) {
-
+void YeeGrid::naive_grid_update(real time_step) {
     // Amperes law
     for (int k = 0; k < grid_dimensions[2]; k++) {
         for (int j = 0; j < grid_dimensions[1]; j++) {
             for (int i = 0; i < grid_dimensions[0]; i++) {
-
-                if (j != 0 && k != 0)
-                    Ex({i, j, k}) += TimeStep * get_inv_permittivity({i, j, k}) *
-                                     ((Hz({i, j, k}) - Hz({i, j, k - 1})) / cell_dimensions[1] - (Hy({i, j, k}) - Hy({i, j - 1, k})) / cell_dimensions[2]);
-                if (i != 0 && k != 0)
-                    Ey({i, j, k}) += TimeStep * get_inv_permittivity({i, j, k}) *
-                                     ((Hx({i - 1, j, k}) - Hx({i, j, k})) / cell_dimensions[2] - (Hz({i, j, k - 1}) - Hz({i, j, k})) / cell_dimensions[0]);
-                if (i != 0 && j != 0)
-                    Ez({i, j, k}) += TimeStep * get_inv_permittivity({i, j, k}) *
-                                     ((Hy({i, j - 1, k}) - Hy({i, j, k})) / cell_dimensions[0] - (Hx({i - 1, j, k}) - Hx({i, j, k})) / cell_dimensions[1]);
+                if (j != 0 && k != 0) {
+                    ex({ i, j, k }) += time_step * get_inv_permittivity({ i, j, k }) *
+                                       ((hz({ i, j, k }) - hz({ i, j, k - 1 })) / cell_dimensions[1] -
+                                        (hy({ i, j, k }) - hy({ i, j - 1, k })) / cell_dimensions[2]);
+                }
+                if (i != 0 && k != 0) {
+                    ey({ i, j, k }) += time_step * get_inv_permittivity({ i, j, k }) *
+                                       ((hx({ i - 1, j, k }) - hx({ i, j, k })) / cell_dimensions[2] -
+                                        (hz({ i, j, k - 1 }) - hz({ i, j, k })) / cell_dimensions[0]);
+                }
+                if (i != 0 && j != 0) {
+                    ez({ i, j, k }) += time_step * get_inv_permittivity({ i, j, k }) *
+                                       ((hy({ i, j - 1, k }) - hy({ i, j, k })) / cell_dimensions[0] -
+                                        (hx({ i - 1, j, k }) - hx({ i, j, k })) / cell_dimensions[1]);
+                }
             }
         }
     }
@@ -23,16 +28,21 @@ void yee_grid::updateGridNaive(R TimeStep) {
     for (int k = 0; k < grid_dimensions[2]; k++) {
         for (int j = 0; j < grid_dimensions[1]; j++) {
             for (int i = 0; i < grid_dimensions[0]; i++) {
-
-                if (j != grid_dimensions[1] - 1 && k != grid_dimensions[2] - 1)
-                    Hx({i, j, k}) -= TimeStep * get_inv_permeability({i, j, k}) *
-                                     ((Ez({i, j + 1, k}) - Ez({i, j, k})) / cell_dimensions[1] - (Ey({i, j, k + 1}) - Ey({i, j, k})) / cell_dimensions[2]);
-                if (i != grid_dimensions[0] - 1 && k != grid_dimensions[2] - 1)
-                    Hy({i, j, k}) -= TimeStep * get_inv_permeability({i, j, k}) *
-                                     ((Ex({i, j, k + 1}) - Ex({i, j, k})) / cell_dimensions[2] - (Ez({i + 1, j, k}) - Ez({i, j, k})) / cell_dimensions[0]);
-                if (i != grid_dimensions[0] - 1 && j != grid_dimensions[1] - 1)
-                    Hz({i, j, k}) -= TimeStep * get_inv_permeability({i, j, k}) *
-                                     ((Ey({i + 1, j, k}) - Ey({i, j, k})) / cell_dimensions[0] - (Ex({i, j + 1, k}) - Ex({i, j, k})) / cell_dimensions[1]);
+                if (j != grid_dimensions[1] - 1 && k != grid_dimensions[2] - 1) {
+                    hx({ i, j, k }) -= time_step * get_inv_permeability({ i, j, k }) *
+                                       ((ez({ i, j + 1, k }) - ez({ i, j, k })) / cell_dimensions[1] -
+                                        (ey({ i, j, k + 1 }) - ey({ i, j, k })) / cell_dimensions[2]);
+                }
+                if (i != grid_dimensions[0] - 1 && k != grid_dimensions[2] - 1) {
+                    hy({ i, j, k }) -= time_step * get_inv_permeability({ i, j, k }) *
+                                       ((ex({ i, j, k + 1 }) - ex({ i, j, k })) / cell_dimensions[2] -
+                                        (ez({ i + 1, j, k }) - ez({ i, j, k })) / cell_dimensions[0]);
+                }
+                if (i != grid_dimensions[0] - 1 && j != grid_dimensions[1] - 1) {
+                    hz({ i, j, k }) -= time_step * get_inv_permeability({ i, j, k }) *
+                                       ((ey({ i + 1, j, k }) - ey({ i, j, k })) / cell_dimensions[0] -
+                                        (ex({ i, j + 1, k }) - ex({ i, j, k })) / cell_dimensions[1]);
+                }
             }
         }
     }

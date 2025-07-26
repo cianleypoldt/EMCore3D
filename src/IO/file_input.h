@@ -1,6 +1,7 @@
 #include <istream>
 
-class input_file {
+class InputFile
+{
   public:
   private:
     std::istream istream_;

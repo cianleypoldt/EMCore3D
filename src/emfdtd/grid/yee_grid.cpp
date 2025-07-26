@@ -1,9 +1,11 @@
 #include "emfdtd/grid/yee_grid.h"
+#include "common/constants.h"
+
 #include <spdlog/spdlog.h>
+#include <cmath>
+#include <cassert>
 
-yee_grid::yee_grid(vec3 world_size, R cell_size)
-    : world_size(world_size) {
-
+YeeGrid::YeeGrid(vec3 world_size, real cell_size) : world_size(world_size) {
     grid_dimensions[0] = std::round(world_size[0] / cell_size);
     grid_dimensions[1] = std::round(world_size[1] / cell_size);
     grid_dimensions[2] = std::round(world_size[2] / cell_size);
@@ -15,7 +17,10 @@ yee_grid::yee_grid(vec3 world_size, R cell_size)
     cell_count = grid_dimensions[0] * grid_dimensions[1] * grid_dimensions[2];
 
     spdlog::info("Constructing a grid over {}x{}x{} meters using {} cubes",
-                 world_size[0], world_size[1], world_size[2], (int)cell_count);
+                 world_size[0],
+                 world_size[1],
+                 world_size[2],
+                 (int) cell_count);
     spdlog::info("Cell dimensions: {}, {}, {}", cell_dimensions[0], cell_dimensions[1], cell_dimensions[2]);
 
     assert(grid_allocate());
@@ -26,6 +31,6 @@ yee_grid::yee_grid(vec3 world_size, R cell_size)
     }
 }
 
-yee_grid::~yee_grid() {
+YeeGrid::~YeeGrid() {
     grid_deallocate();
 }
