@@ -27,7 +27,6 @@ message(STATUS "Project name: ${PROJECT_NAME}")
 #  Packages we need
 # ------------------------------------------------------------------
 find_package(OpenMP REQUIRED)
-find_package(glm REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(PkgConfig REQUIRED)
 find_package(spdlog REQUIRED)
@@ -88,7 +87,6 @@ message(STATUS "  ${CMAKE_CURRENT_SOURCE_DIR}/src")
 # ------------------------------------------------------------------
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
-        glm::glm
         OpenGL::GL
         ${GLFW_LIBRARIES}
         spdlog::spdlog
