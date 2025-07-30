@@ -28,6 +28,7 @@ find_package(OpenMP REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(PkgConfig REQUIRED)
 find_package(spdlog REQUIRED)
+find_package(GLEW REQUIRED)
 pkg_search_module(GLFW REQUIRED glfw3)
 
 # ------------------------------------------------------------------
@@ -78,6 +79,7 @@ target_compile_options(${PROJECT_NAME} PRIVATE
 target_link_libraries(${PROJECT_NAME}
     PRIVATE
         OpenGL::GL
+        GLEW::GLEW
         ${GLFW_LIBRARIES}
         spdlog::spdlog
         OpenMP::OpenMP_CXX
