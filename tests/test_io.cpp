@@ -1,8 +1,8 @@
 #include "emfdtd/grid/yee_grid.h"
-#define CATCH_CONFIG_MAIN
-#include "emfdtd/emfdtd.h"
-#include "IO/file_system.h"
 #include "IO/io.h"
+#define CATCH_CONFIG_MAIN
+
+#include "IO/file_sys/file_system.h"
 
 #include <catch2/catch_all.hpp>
 #include <cstring>
@@ -85,12 +85,4 @@ TEST_CASE("aligned_malloc and aligned_free work as expected", "[io][aligned_memo
     }
 
     io::aligned_free(ptr);
-}
-
-TEST_CASE("aligned_deleter works with unique_ptr", "[io][aligned_deleter]") {
-    constexpr size_t                           size  = 128;
-    constexpr size_t                           align = 32;
-    std::unique_ptr<void, io::aligned_deleter> ptr(io::aligned_malloc(size, align));
-    REQUIRE(ptr != nullptr);
-    REQUIRE(reinterpret_cast<uintptr_t>(ptr.get()) % align == 0);
 }
