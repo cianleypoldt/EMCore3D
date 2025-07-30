@@ -1,2 +1,6 @@
 scripts/ssh_send.sh
 build/
+test_opengl
+example_visualization
+*.bin
+logs/
