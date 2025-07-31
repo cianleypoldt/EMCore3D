@@ -2,7 +2,7 @@
 
 #include "spdlog/spdlog.h"
 
-bool io::fs::ensure_directory(const std::string& path) {
+bool fs::ensure_directory(const std::string& path) {
     try {
         return std::filesystem::create_directories(path);
     } catch (const std::exception& e) {
@@ -11,7 +11,7 @@ bool io::fs::ensure_directory(const std::string& path) {
     }
 }
 
-size_t io::fs::file_size(const std::string& path) {
+size_t fs::file_size(const std::string& path) {
     try {
         if (std::filesystem::exists(path)) {
             return std::filesystem::file_size(path);
@@ -22,7 +22,7 @@ size_t io::fs::file_size(const std::string& path) {
     return 0;
 }
 
-bool io::fs::file_exists(const std::string& path) {
+bool fs::file_exists(const std::string& path) {
     try {
         return std::filesystem::exists(path);
     } catch (const std::exception& e) {

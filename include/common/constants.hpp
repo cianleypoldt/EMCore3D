@@ -11,5 +11,5 @@ constexpr real default_time_step = 0.001;
 
 namespace io_const
 {
-constexpr const char* time_series_output_dir = "/resources/binary_saves/";
+constexpr const char* time_series_output_dir = "../results/binary_saves/";
 }
