@@ -4,7 +4,7 @@
 
 #include <spdlog/spdlog.h>
 
-YeeGrid::YeeGrid(vec3 world_size, real cell_size) :
+YeeGrid::YeeGrid(vec3 world_size, double cell_size) :
     world_size(world_size) {
     grid_dimensions[0] = std::round(world_size[0] / cell_size);
     grid_dimensions[1] = std::round(world_size[1] / cell_size);

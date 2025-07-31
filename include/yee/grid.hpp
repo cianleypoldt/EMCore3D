@@ -1,5 +1,6 @@
 #pragma once
 #include "common/constants.hpp"
+#include "common/types.hpp"
 
 #include <cstdint>
 
@@ -7,13 +8,13 @@ class YeeGrid
 {
 
   public:
-    YeeGrid(vec3 world_size, real cell_size);
+    YeeGrid(vec3 world_size, double cell_size);
     ~YeeGrid();
 
     YeeGrid(const YeeGrid&)            = delete;
     YeeGrid& operator=(const YeeGrid&) = delete;
 
-    void naive_grid_update(real time_step);
+    void naive_grid_update(double time_step);
 
     [[nodiscard]] inline real& ex(const index3& index) const;
     [[nodiscard]] inline real& ey(const index3& index) const;
